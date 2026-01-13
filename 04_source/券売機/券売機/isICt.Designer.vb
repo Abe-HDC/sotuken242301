@@ -22,8 +22,10 @@ Partial Class isICt
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Bbtn = New Button()
         Label1 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Bbtn
@@ -59,4 +61,5 @@ Partial Class isICt
 
     Friend WithEvents Bbtn As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer1 As Timer
 End Class
