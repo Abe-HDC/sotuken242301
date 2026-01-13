@@ -47,6 +47,10 @@ Partial Class isICt
         Label1.TabIndex = 72
         Label1.Text = "ICカードをタッチしてください"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' isICt
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)

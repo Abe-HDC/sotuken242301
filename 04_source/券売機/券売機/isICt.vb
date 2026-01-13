@@ -1,9 +1,9 @@
 ﻿Public Class isICt
 
     'Orange Tags Easy APIの定義
-    Declare Function GetCardIDIndex Lib "OrangeOneStopEasyAPI.dll" (ByRef id As Byte, ByRef length As Integer, ByVal index As Integer) As Integer
-    Declare Function OTReadData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByRef dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
-    Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
+    Private Declare Function GetCardIDIndex Lib "OrangeOneStopEasyAPI.dll" (ByRef id As Byte, ByRef length As Integer, ByVal index As Integer) As Integer
+    Private Declare Function OTReadData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByRef dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
+    Private Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
 
     '変数の宣言
     Dim data(47) As Byte            '読込データバッファ
@@ -15,12 +15,12 @@
     Dim result As Integer           '読書き結果
     Const cardType As Integer = 5   'カードタイプ
 
+    'カードIDの読み込み
     Private Function ReadStart(ByVal reader As Integer) As Integer
         '変数の宣言
         Dim id(10) As Byte
         Dim length As Integer
-        Dim Ret As Integer = 1
-        Ret = GetCardIDIndex(id(0), length, reader)
+        Dim Ret As Integer = GetCardIDIndex(id(0), length, reader)
         Return Ret
     End Function
 
