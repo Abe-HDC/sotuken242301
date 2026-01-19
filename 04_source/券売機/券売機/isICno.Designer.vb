@@ -24,6 +24,7 @@ Partial Class isICno
     Private Sub InitializeComponent()
         Label1 = New Label()
         Nbtn = New Button()
+        Bbtn = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -46,11 +47,22 @@ Partial Class isICno
         Nbtn.Text = "次へ"
         Nbtn.UseVisualStyleBackColor = True
         ' 
+        ' Bbtn
+        ' 
+        Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Bbtn.Location = New Point(50, 316)
+        Bbtn.Name = "Bbtn"
+        Bbtn.Size = New Size(151, 95)
+        Bbtn.TabIndex = 96
+        Bbtn.Text = "戻る"
+        Bbtn.UseVisualStyleBackColor = True
+        ' 
         ' isICno
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Bbtn)
         Controls.Add(Nbtn)
         Controls.Add(Label1)
         Name = "isICno"
@@ -61,4 +73,5 @@ Partial Class isICno
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Nbtn As Button
+    Friend WithEvents Bbtn As Button
 End Class

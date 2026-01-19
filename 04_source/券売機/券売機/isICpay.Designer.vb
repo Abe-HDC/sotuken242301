@@ -91,6 +91,7 @@ Partial Class isICpay
         ' 
         ' nametxt
         ' 
+        nametxt.Enabled = False
         nametxt.Location = New Point(147, 110)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)
@@ -118,6 +119,7 @@ Partial Class isICpay
         ' 
         ' nameDTP
         ' 
+        nameDTP.Enabled = False
         nameDTP.Location = New Point(147, 194)
         nameDTP.Name = "nameDTP"
         nameDTP.Size = New Size(195, 27)
