@@ -37,6 +37,7 @@ Partial Class ticketCo
         bExticket = New Button()
         bprticket = New Button()
         bCoticket = New Button()
+        Bbtn = New Button()
         SuspendLayout()
         ' 
         ' bCo990
@@ -189,11 +190,22 @@ Partial Class ticketCo
         bCoticket.Text = "JR切符"
         bCoticket.UseVisualStyleBackColor = True
         ' 
+        ' Bbtn
+        ' 
+        Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Bbtn.Location = New Point(204, 343)
+        Bbtn.Name = "Bbtn"
+        Bbtn.Size = New Size(151, 95)
+        Bbtn.TabIndex = 72
+        Bbtn.Text = "戻る"
+        Bbtn.UseVisualStyleBackColor = True
+        ' 
         ' ticketCo
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Bbtn)
         Controls.Add(bExticket)
         Controls.Add(bprticket)
         Controls.Add(bCoticket)
@@ -229,4 +241,5 @@ Partial Class ticketCo
     Friend WithEvents bExticket As Button
     Friend WithEvents bprticket As Button
     Friend WithEvents bCoticket As Button
+    Friend WithEvents Bbtn As Button
 End Class
