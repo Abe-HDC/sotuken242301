@@ -57,6 +57,9 @@ Partial Class isICend
         Bbtn.Text = "メインメニューに戻る"
         Bbtn.UseVisualStyleBackColor = True
         ' 
+        ' Timer1
+        ' 
+        ' 
         ' isICend
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)

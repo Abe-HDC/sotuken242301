@@ -22,10 +22,12 @@ Partial Class ICchend
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label2 = New Label()
         baLal = New Label()
         Label1 = New Label()
         Bbtn = New Button()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Label2
@@ -84,4 +86,5 @@ Partial Class ICchend
     Friend WithEvents baLal As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Bbtn As Button
+    Friend WithEvents Timer1 As Timer
 End Class

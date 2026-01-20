@@ -9,8 +9,12 @@ Public Class ICmain
 
     Public Property ReceivedId As Integer
     Private Sub ICmain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        DisplayBalance()
+    End Sub
+
+    Private Sub DisplayBalance()
         '変数の宣言
-        Dim data() As Byte        '読込データバッファ
+        'Dim data() As Byte        '読込データバッファ
         'Dim dataLength As Integer   '読込データサイズ
         Dim id(32) As Byte          'カードID
         'Dim idLength As Integer     'カードIDサイズ
@@ -41,16 +45,54 @@ Public Class ICmain
 
         End If
 
+        'クローズ
+        DataReader.Close()
+        Connection.Close()
+
+        'Dispose
+        Command.Dispose()
+        Connection.Dispose()
+
+        If result = 0 Then
+
+            Dim nextForm As New ICcharge()
+            nextForm.ReceivedId = ReceivedId ' IDを渡す
+        End If
+    End Sub
 
 
-        ''書込データを作成
-        'data = System.Text.Encoding.Unicode.GetBytes(dataString)
-        'dataLength = data.Length
+    Private Sub chbtn_Click(sender As Object, e As EventArgs) Handles chbtn.Click
+        '変数の宣言
+        'Dim data() As Byte        '読込データバッファ
+        'Dim dataLength As Integer   '読込データサイズ
+        Dim id(32) As Byte          'カードID
+        'Dim idLength As Integer     'カードIDサイズ
+        'Dim cardType As Integer     'カードタイプ
+        Dim idString As String = ""      'カードID文字列
+        Dim dataString As String = ""    '結果文字列
+        Dim result As Integer
 
-        ''データ書込み
-        'idLength = id.Length
-        'result = OTWriteData(data(0), dataLength, id(0), idLength, cardType)
 
+        Dim Connection As New MySqlConnection
+        Dim Command As MySqlCommand
+        Dim DataReader As MySqlDataReader
+
+        '接続文字列の設定
+        Connection.ConnectionString = "Database=sotuken242301;Data Source=localhost;User Id=root"
+
+        'オープン
+        Connection.Open()
+
+        Command = Connection.CreateCommand
+        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ReceivedId}"
+        'SQLを実行
+        DataReader = Command.ExecuteReader
+
+        If DataReader.Read() Then
+
+            baLal.Text = DataReader("bal").ToString()
+
+        End If
 
         'クローズ
         DataReader.Close()
@@ -61,15 +103,17 @@ Public Class ICmain
         Connection.Dispose()
 
         If result = 0 Then
+
             Dim nextForm As New ICcharge()
             nextForm.ReceivedId = ReceivedId ' IDを渡す
             nextForm.Show()
             Me.Hide()
         End If
+
     End Sub
 
-    Private Sub chbtn_Click(sender As Object, e As EventArgs) Handles chbtn.Click
-        ICcharge.Show()
+    Private Sub Bbtn_Click(sender As Object, e As EventArgs) Handles Bbtn.Click
+        IC.Show()
         Me.Hide()
     End Sub
 End Class
