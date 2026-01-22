@@ -16,4 +16,8 @@
         mainf.Show()
         Me.Hide()
     End Sub
+
+    Private Sub isbtn_Click(sender As Object, e As EventArgs) Handles isbtn.Click
+        MessageBox.Show("領収書が発行されました")
+    End Sub
 End Class
