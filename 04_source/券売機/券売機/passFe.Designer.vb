@@ -30,7 +30,6 @@ Partial Class passFe
         FeLel = New Label()
         Bbtn = New Button()
         Label9 = New Label()
-        Label4 = New Label()
         Label6 = New Label()
         Label3 = New Label()
         endDTP = New DateTimePicker()
@@ -121,15 +120,6 @@ Partial Class passFe
         Label9.Size = New Size(92, 33)
         Label9.TabIndex = 85
         Label9.Text = "投入金額"
-        ' 
-        ' Label4
-        ' 
-        Label4.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label4.Location = New Point(540, 134)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(233, 33)
-        Label4.TabIndex = 131
-        Label4.Text = "デポジット500円も含みます"
         ' 
         ' Label6
         ' 
@@ -311,7 +301,6 @@ Partial Class passFe
         Controls.Add(Label12)
         Controls.Add(arComboBox)
         Controls.Add(deComboBox)
-        Controls.Add(Label4)
         Controls.Add(Label9)
         Controls.Add(Bbtn)
         Controls.Add(isbtn)
@@ -334,7 +323,6 @@ Partial Class passFe
     Friend WithEvents FeLel As Label
     Friend WithEvents Bbtn As Button
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents endDTP As DateTimePicker
