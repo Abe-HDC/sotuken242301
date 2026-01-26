@@ -156,6 +156,7 @@ Partial Class passFe
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 145
         Rad6m.TabStop = True
+        Rad6m.Tag = "6"
         Rad6m.Text = "6ヶ月"
         Rad6m.UseVisualStyleBackColor = True
         ' 
@@ -167,6 +168,7 @@ Partial Class passFe
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 144
         Rad3m.TabStop = True
+        Rad3m.Tag = "3"
         Rad3m.Text = "3ヶ月"
         Rad3m.UseVisualStyleBackColor = True
         ' 
@@ -178,6 +180,7 @@ Partial Class passFe
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 143
         Rad1m.TabStop = True
+        Rad1m.Tag = "1"
         Rad1m.Text = "1ヶ月"
         Rad1m.UseVisualStyleBackColor = True
         ' 

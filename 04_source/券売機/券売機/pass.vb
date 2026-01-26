@@ -19,15 +19,15 @@ Public Class pass
 
 
         If Rad1m.Checked Then
-            mont = 1
+            mont = Rad1m.Tag
         End If
 
         If Rad3m.Checked Then
-            mont = 3
+            mont = Rad3m.Tag
         End If
 
         If Rad6m.Checked Then
-            mont = 6
+            mont = Rad6m.Tag
         End If
 
         '接続文字列の設定
@@ -37,7 +37,7 @@ Public Class pass
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"INSERT INTO iccard(name,seinen,stday,endday,depass,arpass,gepass,month) VALUES ('{sei}','{seinen}','{std}','{endd}',{de}','{ar}',{ge},{mont}); SELECT LAST_INSERT_ID(); "
+        Command.CommandText = $"INSERT INTO iccard(name,seinen,stday,endday,depass,arpass,gepass,month) VALUES ('{sei}','{seinen}','{std}','{endd}','{de}','{ar}',{ge},{mont}); SELECT LAST_INSERT_ID(); "
         'SQLを実行
         'DataReader = Command.ExecuteReader
         Dim newId As Integer = Convert.ToInt32(Command.ExecuteScalar())
@@ -50,7 +50,9 @@ Public Class pass
         Command.Dispose()
         Connection.Dispose()
 
-        passFe.Show()
+        Dim nextForm As New passFe()
+        nextForm.ReceivedId = newId ' IDを渡す
+        nextForm.Show()
         Me.Hide()
     End Sub
 End Class

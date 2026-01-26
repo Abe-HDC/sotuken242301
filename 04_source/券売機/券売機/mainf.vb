@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub bpass_Click(sender As Object, e As EventArgs) Handles bpass.Click
-        pass.Show()
+        passn.Show()
         Me.Hide()
     End Sub
 
