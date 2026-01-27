@@ -22,7 +22,9 @@ Partial Class gateend
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label1 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Label1
@@ -34,6 +36,10 @@ Partial Class gateend
         Label1.Size = New Size(133, 50)
         Label1.TabIndex = 0
         Label1.Text = "待機中"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
         ' 
         ' gateend
         ' 
@@ -48,4 +54,5 @@ Partial Class gateend
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer1 As Timer
 End Class

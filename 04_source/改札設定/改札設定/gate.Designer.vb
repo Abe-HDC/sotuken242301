@@ -22,12 +22,14 @@ Partial Class gate
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
         Label6 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Label1
@@ -84,6 +86,10 @@ Partial Class gate
         Label6.TabIndex = 4
         Label6.Text = "定期券更新日"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' gate
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -106,4 +112,5 @@ Partial Class gate
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Timer1 As Timer
 End Class
