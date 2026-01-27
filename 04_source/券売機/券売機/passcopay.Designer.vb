@@ -98,6 +98,7 @@ Partial Class passcopay
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 136
         Rad6m.TabStop = True
+        Rad6m.Tag = "6"
         Rad6m.Text = "6ヶ月"
         Rad6m.UseVisualStyleBackColor = True
         ' 
@@ -109,6 +110,7 @@ Partial Class passcopay
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 135
         Rad3m.TabStop = True
+        Rad3m.Tag = "3"
         Rad3m.Text = "3ヶ月"
         Rad3m.UseVisualStyleBackColor = True
         ' 
@@ -120,11 +122,13 @@ Partial Class passcopay
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 134
         Rad1m.TabStop = True
+        Rad1m.Tag = "1"
         Rad1m.Text = "1ヶ月"
         Rad1m.UseVisualStyleBackColor = True
         ' 
         ' nametxt
         ' 
+        nametxt.Enabled = False
         nametxt.Location = New Point(69, 95)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)

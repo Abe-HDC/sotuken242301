@@ -98,6 +98,7 @@ Partial Class passICn
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 153
         Rad6m.TabStop = True
+        Rad6m.Tag = "6"
         Rad6m.Text = "6ヶ月"
         Rad6m.UseVisualStyleBackColor = True
         ' 
@@ -109,6 +110,7 @@ Partial Class passICn
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 152
         Rad3m.TabStop = True
+        Rad3m.Tag = "3"
         Rad3m.Text = "3ヶ月"
         Rad3m.UseVisualStyleBackColor = True
         ' 
@@ -120,11 +122,13 @@ Partial Class passICn
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 151
         Rad1m.TabStop = True
+        Rad1m.Tag = "1"
         Rad1m.Text = "1ヶ月"
         Rad1m.UseVisualStyleBackColor = True
         ' 
         ' nametxt
         ' 
+        nametxt.Enabled = False
         nametxt.Location = New Point(57, 111)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)
@@ -208,6 +212,7 @@ Partial Class passICn
         ' arComboBox
         ' 
         arComboBox.FormattingEnabled = True
+        arComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         arComboBox.Location = New Point(543, 249)
         arComboBox.Name = "arComboBox"
         arComboBox.Size = New Size(195, 28)
@@ -216,6 +221,7 @@ Partial Class passICn
         ' deComboBox
         ' 
         deComboBox.FormattingEnabled = True
+        deComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         deComboBox.Location = New Point(287, 249)
         deComboBox.Name = "deComboBox"
         deComboBox.Size = New Size(195, 28)

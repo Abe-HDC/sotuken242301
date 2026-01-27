@@ -104,6 +104,7 @@ Partial Class passICFe
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 187
         Rad6m.TabStop = True
+        Rad6m.Tag = "6"
         Rad6m.Text = "6ヶ月"
         Rad6m.UseVisualStyleBackColor = True
         ' 
@@ -115,6 +116,7 @@ Partial Class passICFe
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 186
         Rad3m.TabStop = True
+        Rad3m.Tag = "3"
         Rad3m.Text = "3ヶ月"
         Rad3m.UseVisualStyleBackColor = True
         ' 
@@ -126,6 +128,7 @@ Partial Class passICFe
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 185
         Rad1m.TabStop = True
+        Rad1m.Tag = "1"
         Rad1m.Text = "1ヶ月"
         Rad1m.UseVisualStyleBackColor = True
         ' 
@@ -176,6 +179,7 @@ Partial Class passICFe
         ' 
         ' stDTP
         ' 
+        stDTP.Enabled = False
         stDTP.Location = New Point(165, 131)
         stDTP.Name = "stDTP"
         stDTP.Size = New Size(134, 27)
@@ -213,6 +217,7 @@ Partial Class passICFe
         ' 
         ' arComboBox
         ' 
+        arComboBox.Enabled = False
         arComboBox.FormattingEnabled = True
         arComboBox.Location = New Point(350, 260)
         arComboBox.Name = "arComboBox"
@@ -221,6 +226,7 @@ Partial Class passICFe
         ' 
         ' deComboBox
         ' 
+        deComboBox.Enabled = False
         deComboBox.FormattingEnabled = True
         deComboBox.Location = New Point(165, 260)
         deComboBox.Name = "deComboBox"

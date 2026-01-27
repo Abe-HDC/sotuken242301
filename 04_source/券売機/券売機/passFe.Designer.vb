@@ -143,6 +143,7 @@ Partial Class passFe
         ' 
         ' endDTP
         ' 
+        endDTP.Enabled = False
         endDTP.Location = New Point(335, 136)
         endDTP.Name = "endDTP"
         endDTP.Size = New Size(134, 27)
@@ -186,6 +187,7 @@ Partial Class passFe
         ' 
         ' nametxt
         ' 
+        nametxt.Enabled = False
         nametxt.Location = New Point(10, 135)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(134, 27)
@@ -231,6 +233,7 @@ Partial Class passFe
         ' 
         ' stDTP
         ' 
+        stDTP.Enabled = False
         stDTP.Location = New Point(150, 136)
         stDTP.Name = "stDTP"
         stDTP.Size = New Size(134, 27)
@@ -268,6 +271,7 @@ Partial Class passFe
         ' 
         ' arComboBox
         ' 
+        arComboBox.Enabled = False
         arComboBox.FormattingEnabled = True
         arComboBox.Location = New Point(335, 265)
         arComboBox.Name = "arComboBox"
@@ -276,6 +280,7 @@ Partial Class passFe
         ' 
         ' deComboBox
         ' 
+        deComboBox.Enabled = False
         deComboBox.FormattingEnabled = True
         deComboBox.Location = New Point(150, 265)
         deComboBox.Name = "deComboBox"

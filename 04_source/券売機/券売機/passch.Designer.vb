@@ -22,11 +22,13 @@ Partial Class passch
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label2 = New Label()
         Label1 = New Label()
         Label3 = New Label()
         isbtn = New Button()
         Bbtn = New Button()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Label2
@@ -100,4 +102,5 @@ Partial Class passch
     Friend WithEvents Label3 As Label
     Friend WithEvents isbtn As Button
     Friend WithEvents Bbtn As Button
+    Friend WithEvents Timer1 As Timer
 End Class
