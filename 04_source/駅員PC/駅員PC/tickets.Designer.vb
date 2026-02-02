@@ -30,8 +30,8 @@ Partial Class tickets
         Btin = New Button()
         Label2 = New Label()
         Label1 = New Label()
-        ComboBox2 = New ComboBox()
-        ComboBox1 = New ComboBox()
+        CBend = New ComboBox()
+        CBst = New ComboBox()
         dayDTP = New DateTimePicker()
         SuspendLayout()
         ' 
@@ -116,21 +116,21 @@ Partial Class tickets
         Label1.TabIndex = 27
         Label1.Text = "出発駅"
         ' 
-        ' ComboBox2
+        ' CBend
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(557, 97)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(191, 28)
-        ComboBox2.TabIndex = 26
+        CBend.FormattingEnabled = True
+        CBend.Location = New Point(557, 97)
+        CBend.Name = "CBend"
+        CBend.Size = New Size(191, 28)
+        CBend.TabIndex = 26
         ' 
-        ' ComboBox1
+        ' CBst
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(305, 97)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(191, 28)
-        ComboBox1.TabIndex = 25
+        CBst.FormattingEnabled = True
+        CBst.Location = New Point(305, 97)
+        CBst.Name = "CBst"
+        CBst.Size = New Size(191, 28)
+        CBst.TabIndex = 25
         ' 
         ' dayDTP
         ' 
@@ -153,8 +153,8 @@ Partial Class tickets
         Controls.Add(Btin)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(ComboBox2)
-        Controls.Add(ComboBox1)
+        Controls.Add(CBend)
+        Controls.Add(CBst)
         Name = "tickets"
         Text = "切符購入"
         ResumeLayout(False)
@@ -169,7 +169,7 @@ Partial Class tickets
     Friend WithEvents Btin As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CBend As ComboBox
+    Friend WithEvents CBst As ComboBox
     Friend WithEvents dayDTP As DateTimePicker
 End Class

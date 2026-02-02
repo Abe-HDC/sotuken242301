@@ -30,15 +30,15 @@ Partial Class ticketsFe
         Btin = New Button()
         Label2 = New Label()
         Label1 = New Label()
-        ComboBox2 = New ComboBox()
-        ComboBox1 = New ComboBox()
-        dayLel = New Label()
+        CBend = New ComboBox()
+        CBst = New ComboBox()
         Label5 = New Label()
         FeLel = New Label()
         chLal = New Label()
         Label7 = New Label()
         Label6 = New Label()
         Fetxt = New TextBox()
+        dayDTP = New DateTimePicker()
         SuspendLayout()
         ' 
         ' Febtn
@@ -122,30 +122,21 @@ Partial Class ticketsFe
         Label1.TabIndex = 14
         Label1.Text = "出発駅"
         ' 
-        ' ComboBox2
+        ' CBend
         ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(557, 93)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(191, 28)
-        ComboBox2.TabIndex = 13
+        CBend.FormattingEnabled = True
+        CBend.Location = New Point(557, 93)
+        CBend.Name = "CBend"
+        CBend.Size = New Size(191, 28)
+        CBend.TabIndex = 13
         ' 
-        ' ComboBox1
+        ' CBst
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(305, 93)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(191, 28)
-        ComboBox1.TabIndex = 12
-        ' 
-        ' dayLel
-        ' 
-        dayLel.BorderStyle = BorderStyle.Fixed3D
-        dayLel.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        dayLel.Location = New Point(102, 90)
-        dayLel.Name = "dayLel"
-        dayLel.Size = New Size(162, 31)
-        dayLel.TabIndex = 23
+        CBst.FormattingEnabled = True
+        CBst.Location = New Point(305, 93)
+        CBst.Name = "CBst"
+        CBst.Size = New Size(191, 28)
+        CBst.TabIndex = 12
         ' 
         ' Label5
         ' 
@@ -202,18 +193,25 @@ Partial Class ticketsFe
         Fetxt.Size = New Size(162, 27)
         Fetxt.TabIndex = 29
         ' 
+        ' dayDTP
+        ' 
+        dayDTP.Location = New Point(102, 91)
+        dayDTP.Name = "dayDTP"
+        dayDTP.Size = New Size(164, 27)
+        dayDTP.TabIndex = 36
+        ' 
         ' ticketsFe
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(dayDTP)
         Controls.Add(Fetxt)
         Controls.Add(Label6)
         Controls.Add(chLal)
         Controls.Add(Label7)
         Controls.Add(FeLel)
         Controls.Add(Label5)
-        Controls.Add(dayLel)
         Controls.Add(Febtn)
         Controls.Add(rtRB)
         Controls.Add(owRB)
@@ -222,8 +220,8 @@ Partial Class ticketsFe
         Controls.Add(Btin)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(ComboBox2)
-        Controls.Add(ComboBox1)
+        Controls.Add(CBend)
+        Controls.Add(CBst)
         Name = "ticketsFe"
         Text = "切符購入"
         ResumeLayout(False)
@@ -238,13 +236,13 @@ Partial Class ticketsFe
     Friend WithEvents Btin As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents dayLel As Label
+    Friend WithEvents CBend As ComboBox
+    Friend WithEvents CBst As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents FeLel As Label
     Friend WithEvents chLal As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Fetxt As TextBox
+    Friend WithEvents dayDTP As DateTimePicker
 End Class
