@@ -5,8 +5,15 @@ Imports MySql.Data.MySqlClient
 
 Public Class gate
     Public Property ReceivedId As Integer
+    Public Property pay As Integer
 
     Private Sub gate_Load(sender As Object, e As EventArgs) Handles Me.Load
+        baldis()
+        Label3.Text = pay
+        Timer1.Interval = 3000
+        Timer1.Start()
+    End Sub
+    Private Sub baldis()
         '変数の宣言
         'Dim data() As Byte        '読込データバッファ
         'Dim dataLength As Integer   '読込データサイズ
@@ -28,13 +35,13 @@ Public Class gate
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ReceivedId} "
+        Command.CommandText = $"SELECT bal,endday FROM iccard WHERE ICno = {ReceivedId} "
         'SQLを実行
         DataReader = Command.ExecuteReader
 
         If DataReader.Read() Then
             Label2.Text = DataReader("bal").ToString()
-
+            Label5.Text = DataReader("endday").ToString()
         End If
 
 
@@ -45,10 +52,8 @@ Public Class gate
         'Dispose
         Command.Dispose()
         Connection.Dispose()
-
-        Timer1.Interval = 3000
-        Timer1.Start()
     End Sub
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Timer1.Stop()
 
