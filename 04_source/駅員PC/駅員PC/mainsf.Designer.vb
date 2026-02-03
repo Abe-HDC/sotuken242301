@@ -68,7 +68,7 @@ Partial Class mainsf
         bofs.Text = "乗り越し精算"
         bofs.UseVisualStyleBackColor = True
         ' 
-        ' mainf
+        ' mainsf
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
@@ -77,7 +77,7 @@ Partial Class mainsf
         Controls.Add(ictouch)
         Controls.Add(bpass)
         Controls.Add(bticket)
-        Name = "mainf"
+        Name = "mainsf"
         Text = "メインメニュー"
         ResumeLayout(False)
     End Sub

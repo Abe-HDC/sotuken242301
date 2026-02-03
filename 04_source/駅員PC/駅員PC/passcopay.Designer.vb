@@ -24,9 +24,6 @@ Partial Class passcopay
     Private Sub InitializeComponent()
         Bbtn = New Button()
         Nbtn = New Button()
-        smGB = New GroupBox()
-        meRB = New RadioButton()
-        stRB = New RadioButton()
         mGB = New GroupBox()
         Rad3m = New RadioButton()
         Rad1m = New RadioButton()
@@ -45,8 +42,14 @@ Partial Class passcopay
         Label1 = New Label()
         arComboBox = New ComboBox()
         deComboBox = New ComboBox()
-        smGB.SuspendLayout()
+        smGB = New GroupBox()
+        stRBc = New RadioButton()
+        stRBk = New RadioButton()
+        stRBu = New RadioButton()
+        meRB = New RadioButton()
+        stRB = New RadioButton()
         mGB.SuspendLayout()
+        smGB.SuspendLayout()
         SuspendLayout()
         ' 
         ' Bbtn
@@ -62,47 +65,12 @@ Partial Class passcopay
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(599, 304)
+        Nbtn.Location = New Point(724, 304)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(151, 95)
         Nbtn.TabIndex = 80
         Nbtn.Text = "次へ"
         Nbtn.UseVisualStyleBackColor = True
-        ' 
-        ' smGB
-        ' 
-        smGB.Controls.Add(meRB)
-        smGB.Controls.Add(stRB)
-        smGB.Location = New Point(679, 35)
-        smGB.Name = "smGB"
-        smGB.Size = New Size(91, 112)
-        smGB.TabIndex = 274
-        smGB.TabStop = False
-        smGB.Text = "通学または通勤"
-        ' 
-        ' meRB
-        ' 
-        meRB.AutoSize = True
-        meRB.Font = New Font("Yu Gothic UI", 10.2F)
-        meRB.Location = New Point(16, 77)
-        meRB.Name = "meRB"
-        meRB.Size = New Size(65, 27)
-        meRB.TabIndex = 239
-        meRB.TabStop = True
-        meRB.Text = "通勤"
-        meRB.UseVisualStyleBackColor = True
-        ' 
-        ' stRB
-        ' 
-        stRB.AutoSize = True
-        stRB.Font = New Font("Yu Gothic UI", 10.2F)
-        stRB.Location = New Point(16, 44)
-        stRB.Name = "stRB"
-        stRB.Size = New Size(65, 27)
-        stRB.TabIndex = 238
-        stRB.TabStop = True
-        stRB.Text = "通学"
-        stRB.UseVisualStyleBackColor = True
         ' 
         ' mGB
         ' 
@@ -274,11 +242,85 @@ Partial Class passcopay
         deComboBox.Size = New Size(195, 28)
         deComboBox.TabIndex = 259
         ' 
+        ' smGB
+        ' 
+        smGB.Controls.Add(stRBc)
+        smGB.Controls.Add(stRBk)
+        smGB.Controls.Add(stRBu)
+        smGB.Controls.Add(meRB)
+        smGB.Controls.Add(stRB)
+        smGB.Location = New Point(679, 25)
+        smGB.Name = "smGB"
+        smGB.Size = New Size(212, 150)
+        smGB.TabIndex = 259
+        smGB.TabStop = False
+        smGB.Text = "通学または通勤"
+        ' 
+        ' stRBc
+        ' 
+        stRBc.AutoSize = True
+        stRBc.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBc.Location = New Point(87, 106)
+        stRBc.Name = "stRBc"
+        stRBc.Size = New Size(109, 27)
+        stRBc.TabIndex = 242
+        stRBc.TabStop = True
+        stRBc.Text = "通学(中学)"
+        stRBc.UseVisualStyleBackColor = True
+        ' 
+        ' stRBk
+        ' 
+        stRBk.AutoSize = True
+        stRBk.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBk.Location = New Point(87, 73)
+        stRBk.Name = "stRBk"
+        stRBk.Size = New Size(109, 27)
+        stRBk.TabIndex = 241
+        stRBk.TabStop = True
+        stRBk.Text = "通学(高校)"
+        stRBk.UseVisualStyleBackColor = True
+        ' 
+        ' stRBu
+        ' 
+        stRBu.AutoSize = True
+        stRBu.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBu.Location = New Point(87, 35)
+        stRBu.Name = "stRBu"
+        stRBu.Size = New Size(109, 27)
+        stRBu.TabIndex = 240
+        stRBu.TabStop = True
+        stRBu.Text = "通学(大学)"
+        stRBu.UseVisualStyleBackColor = True
+        ' 
+        ' meRB
+        ' 
+        meRB.AutoSize = True
+        meRB.Font = New Font("Yu Gothic UI", 10.2F)
+        meRB.Location = New Point(16, 77)
+        meRB.Name = "meRB"
+        meRB.Size = New Size(65, 27)
+        meRB.TabIndex = 239
+        meRB.TabStop = True
+        meRB.Text = "通勤"
+        meRB.UseVisualStyleBackColor = True
+        ' 
+        ' stRB
+        ' 
+        stRB.AutoSize = True
+        stRB.Font = New Font("Yu Gothic UI", 10.2F)
+        stRB.Location = New Point(16, 44)
+        stRB.Name = "stRB"
+        stRB.Size = New Size(65, 27)
+        stRB.TabIndex = 238
+        stRB.TabStop = True
+        stRB.Text = "通学"
+        stRB.UseVisualStyleBackColor = True
+        ' 
         ' passcopay
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 450)
         Controls.Add(smGB)
         Controls.Add(mGB)
         Controls.Add(Label6)
@@ -299,18 +341,15 @@ Partial Class passcopay
         Controls.Add(Nbtn)
         Name = "passcopay"
         Text = "定期券更新"
-        smGB.ResumeLayout(False)
-        smGB.PerformLayout()
         mGB.ResumeLayout(False)
         mGB.PerformLayout()
+        smGB.ResumeLayout(False)
+        smGB.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
     Friend WithEvents Bbtn As Button
     Friend WithEvents Nbtn As Button
-    Friend WithEvents smGB As GroupBox
-    Friend WithEvents meRB As RadioButton
-    Friend WithEvents stRB As RadioButton
     Friend WithEvents mGB As GroupBox
     Friend WithEvents Rad3m As RadioButton
     Friend WithEvents Rad1m As RadioButton
@@ -329,4 +368,10 @@ Partial Class passcopay
     Friend WithEvents Label1 As Label
     Friend WithEvents arComboBox As ComboBox
     Friend WithEvents deComboBox As ComboBox
+    Friend WithEvents smGB As GroupBox
+    Friend WithEvents stRBc As RadioButton
+    Friend WithEvents stRBk As RadioButton
+    Friend WithEvents stRBu As RadioButton
+    Friend WithEvents meRB As RadioButton
+    Friend WithEvents stRB As RadioButton
 End Class

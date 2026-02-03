@@ -38,15 +38,18 @@ Partial Class passICn
         Label1 = New Label()
         arComboBox = New ComboBox()
         deComboBox = New ComboBox()
-        smGB = New GroupBox()
-        meRB = New RadioButton()
-        stRB = New RadioButton()
         mGB = New GroupBox()
         Rad3m = New RadioButton()
         Rad1m = New RadioButton()
         Rad6m = New RadioButton()
-        smGB.SuspendLayout()
+        smGB = New GroupBox()
+        stRBc = New RadioButton()
+        stRBk = New RadioButton()
+        stRBu = New RadioButton()
+        meRB = New RadioButton()
+        stRB = New RadioButton()
         mGB.SuspendLayout()
+        smGB.SuspendLayout()
         SuspendLayout()
         ' 
         ' Bbtn
@@ -62,7 +65,7 @@ Partial Class passICn
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(599, 313)
+        Nbtn.Location = New Point(745, 313)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(151, 95)
         Nbtn.TabIndex = 102
@@ -98,6 +101,7 @@ Partial Class passICn
         ' 
         ' nametxt
         ' 
+        nametxt.Enabled = False
         nametxt.Location = New Point(52, 97)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)
@@ -181,6 +185,7 @@ Partial Class passICn
         ' arComboBox
         ' 
         arComboBox.FormattingEnabled = True
+        arComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         arComboBox.Location = New Point(538, 235)
         arComboBox.Name = "arComboBox"
         arComboBox.Size = New Size(195, 28)
@@ -189,45 +194,11 @@ Partial Class passICn
         ' deComboBox
         ' 
         deComboBox.FormattingEnabled = True
+        deComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         deComboBox.Location = New Point(282, 235)
         deComboBox.Name = "deComboBox"
         deComboBox.Size = New Size(195, 28)
         deComboBox.TabIndex = 160
-        ' 
-        ' smGB
-        ' 
-        smGB.Controls.Add(meRB)
-        smGB.Controls.Add(stRB)
-        smGB.Location = New Point(700, 56)
-        smGB.Name = "smGB"
-        smGB.Size = New Size(91, 112)
-        smGB.TabIndex = 242
-        smGB.TabStop = False
-        smGB.Text = "通学または通勤"
-        ' 
-        ' meRB
-        ' 
-        meRB.AutoSize = True
-        meRB.Font = New Font("Yu Gothic UI", 10.2F)
-        meRB.Location = New Point(16, 77)
-        meRB.Name = "meRB"
-        meRB.Size = New Size(65, 27)
-        meRB.TabIndex = 239
-        meRB.TabStop = True
-        meRB.Text = "通勤"
-        meRB.UseVisualStyleBackColor = True
-        ' 
-        ' stRB
-        ' 
-        stRB.AutoSize = True
-        stRB.Font = New Font("Yu Gothic UI", 10.2F)
-        stRB.Location = New Point(16, 44)
-        stRB.Name = "stRB"
-        stRB.Size = New Size(65, 27)
-        stRB.TabIndex = 238
-        stRB.TabStop = True
-        stRB.Text = "通学"
-        stRB.UseVisualStyleBackColor = True
         ' 
         ' mGB
         ' 
@@ -274,11 +245,85 @@ Partial Class passICn
         Rad6m.Text = "6ヶ月"
         Rad6m.UseVisualStyleBackColor = True
         ' 
+        ' smGB
+        ' 
+        smGB.Controls.Add(stRBc)
+        smGB.Controls.Add(stRBk)
+        smGB.Controls.Add(stRBu)
+        smGB.Controls.Add(meRB)
+        smGB.Controls.Add(stRB)
+        smGB.Location = New Point(700, 46)
+        smGB.Name = "smGB"
+        smGB.Size = New Size(212, 150)
+        smGB.TabIndex = 259
+        smGB.TabStop = False
+        smGB.Text = "通学または通勤"
+        ' 
+        ' stRBc
+        ' 
+        stRBc.AutoSize = True
+        stRBc.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBc.Location = New Point(87, 106)
+        stRBc.Name = "stRBc"
+        stRBc.Size = New Size(109, 27)
+        stRBc.TabIndex = 242
+        stRBc.TabStop = True
+        stRBc.Text = "通学(中学)"
+        stRBc.UseVisualStyleBackColor = True
+        ' 
+        ' stRBk
+        ' 
+        stRBk.AutoSize = True
+        stRBk.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBk.Location = New Point(87, 73)
+        stRBk.Name = "stRBk"
+        stRBk.Size = New Size(109, 27)
+        stRBk.TabIndex = 241
+        stRBk.TabStop = True
+        stRBk.Text = "通学(高校)"
+        stRBk.UseVisualStyleBackColor = True
+        ' 
+        ' stRBu
+        ' 
+        stRBu.AutoSize = True
+        stRBu.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBu.Location = New Point(87, 35)
+        stRBu.Name = "stRBu"
+        stRBu.Size = New Size(109, 27)
+        stRBu.TabIndex = 240
+        stRBu.TabStop = True
+        stRBu.Text = "通学(大学)"
+        stRBu.UseVisualStyleBackColor = True
+        ' 
+        ' meRB
+        ' 
+        meRB.AutoSize = True
+        meRB.Font = New Font("Yu Gothic UI", 10.2F)
+        meRB.Location = New Point(16, 77)
+        meRB.Name = "meRB"
+        meRB.Size = New Size(65, 27)
+        meRB.TabIndex = 239
+        meRB.TabStop = True
+        meRB.Text = "通勤"
+        meRB.UseVisualStyleBackColor = True
+        ' 
+        ' stRB
+        ' 
+        stRB.AutoSize = True
+        stRB.Font = New Font("Yu Gothic UI", 10.2F)
+        stRB.Location = New Point(16, 44)
+        stRB.Name = "stRB"
+        stRB.Size = New Size(65, 27)
+        stRB.TabIndex = 238
+        stRB.TabStop = True
+        stRB.Text = "通学"
+        stRB.UseVisualStyleBackColor = True
+        ' 
         ' passICn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(936, 450)
         Controls.Add(smGB)
         Controls.Add(mGB)
         Controls.Add(Label6)
@@ -299,10 +344,10 @@ Partial Class passICn
         Controls.Add(Nbtn)
         Name = "passICn"
         Text = "定期券購入"
-        smGB.ResumeLayout(False)
-        smGB.PerformLayout()
         mGB.ResumeLayout(False)
         mGB.PerformLayout()
+        smGB.ResumeLayout(False)
+        smGB.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -322,11 +367,14 @@ Partial Class passICn
     Friend WithEvents Label1 As Label
     Friend WithEvents arComboBox As ComboBox
     Friend WithEvents deComboBox As ComboBox
-    Friend WithEvents smGB As GroupBox
-    Friend WithEvents meRB As RadioButton
-    Friend WithEvents stRB As RadioButton
     Friend WithEvents mGB As GroupBox
     Friend WithEvents Rad3m As RadioButton
     Friend WithEvents Rad1m As RadioButton
     Friend WithEvents Rad6m As RadioButton
+    Friend WithEvents smGB As GroupBox
+    Friend WithEvents stRBc As RadioButton
+    Friend WithEvents stRBk As RadioButton
+    Friend WithEvents stRBu As RadioButton
+    Friend WithEvents meRB As RadioButton
+    Friend WithEvents stRB As RadioButton
 End Class

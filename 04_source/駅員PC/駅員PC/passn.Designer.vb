@@ -31,9 +31,9 @@ Partial Class passn
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(67, 306)
+        Bbtn.Location = New Point(36, 300)
         Bbtn.Name = "Bbtn"
-        Bbtn.Size = New Size(151, 95)
+        Bbtn.Size = New Size(189, 119)
         Bbtn.TabIndex = 73
         Bbtn.Text = "戻る"
         Bbtn.UseVisualStyleBackColor = True

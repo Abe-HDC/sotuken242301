@@ -3,6 +3,7 @@
 Public Class passFe
     Public Property ReceivedId As Integer
 
+
     Private Sub passFe_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim Connection As New MySqlConnection
         Dim Command As MySqlCommand

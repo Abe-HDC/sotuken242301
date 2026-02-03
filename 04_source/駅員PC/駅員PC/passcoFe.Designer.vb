@@ -23,7 +23,6 @@ Partial Class passcoFe
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Bbtn = New Button()
-        isbtn = New Button()
         Label6 = New Label()
         Label3 = New Label()
         endDTP = New DateTimePicker()
@@ -41,15 +40,19 @@ Partial Class passcoFe
         Label12 = New Label()
         arComboBox = New ComboBox()
         deComboBox = New ComboBox()
-        Label9 = New Label()
-        chLal = New Label()
-        Label2 = New Label()
-        Fetxt = New TextBox()
-        Label1 = New Label()
-        FeLel = New Label()
         mGB = New GroupBox()
-        meRB = New RadioButton()
+        isbtn = New Button()
+        FeLel = New Label()
+        Label1 = New Label()
+        Fetxt = New TextBox()
+        Label2 = New Label()
+        chLal = New Label()
+        Label9 = New Label()
         smGB = New GroupBox()
+        stRBc = New RadioButton()
+        stRBk = New RadioButton()
+        stRBu = New RadioButton()
+        meRB = New RadioButton()
         stRB = New RadioButton()
         mGB.SuspendLayout()
         smGB.SuspendLayout()
@@ -64,16 +67,6 @@ Partial Class passcoFe
         Bbtn.TabIndex = 142
         Bbtn.Text = "戻る"
         Bbtn.UseVisualStyleBackColor = True
-        ' 
-        ' isbtn
-        ' 
-        isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(579, 313)
-        isbtn.Name = "isbtn"
-        isbtn.Size = New Size(188, 95)
-        isbtn.TabIndex = 137
-        isbtn.Text = "更新"
-        isbtn.UseVisualStyleBackColor = True
         ' 
         ' Label6
         ' 
@@ -233,58 +226,6 @@ Partial Class passcoFe
         deComboBox.Size = New Size(134, 28)
         deComboBox.TabIndex = 220
         ' 
-        ' Label9
-        ' 
-        Label9.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label9.Location = New Point(552, 139)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(92, 33)
-        Label9.TabIndex = 219
-        Label9.Text = "投入金額"
-        ' 
-        ' chLal
-        ' 
-        chLal.BorderStyle = BorderStyle.Fixed3D
-        chLal.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        chLal.Location = New Point(650, 228)
-        chLal.Name = "chLal"
-        chLal.Size = New Size(138, 50)
-        chLal.TabIndex = 218
-        ' 
-        ' Label2
-        ' 
-        Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(588, 229)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(56, 33)
-        Label2.TabIndex = 217
-        Label2.Text = "残額"
-        ' 
-        ' Fetxt
-        ' 
-        Fetxt.Location = New Point(650, 143)
-        Fetxt.Name = "Fetxt"
-        Fetxt.Size = New Size(138, 27)
-        Fetxt.TabIndex = 216
-        ' 
-        ' Label1
-        ' 
-        Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(534, 44)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(110, 33)
-        Label1.TabIndex = 215
-        Label1.Text = "支払い金額"
-        ' 
-        ' FeLel
-        ' 
-        FeLel.BorderStyle = BorderStyle.Fixed3D
-        FeLel.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        FeLel.Location = New Point(650, 54)
-        FeLel.Name = "FeLel"
-        FeLel.Size = New Size(138, 50)
-        FeLel.TabIndex = 214
-        ' 
         ' mGB
         ' 
         mGB.Controls.Add(Rad3m)
@@ -297,6 +238,118 @@ Partial Class passcoFe
         mGB.TabStop = False
         mGB.Text = "月数"
         ' 
+        ' isbtn
+        ' 
+        isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        isbtn.Location = New Point(711, 314)
+        isbtn.Name = "isbtn"
+        isbtn.Size = New Size(188, 95)
+        isbtn.TabIndex = 137
+        isbtn.Text = "更新"
+        isbtn.UseVisualStyleBackColor = True
+        ' 
+        ' FeLel
+        ' 
+        FeLel.BorderStyle = BorderStyle.Fixed3D
+        FeLel.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        FeLel.Location = New Point(782, 55)
+        FeLel.Name = "FeLel"
+        FeLel.Size = New Size(138, 50)
+        FeLel.TabIndex = 214
+        ' 
+        ' Label1
+        ' 
+        Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Label1.Location = New Point(666, 45)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(110, 33)
+        Label1.TabIndex = 215
+        Label1.Text = "支払い金額"
+        ' 
+        ' Fetxt
+        ' 
+        Fetxt.Location = New Point(782, 144)
+        Fetxt.Name = "Fetxt"
+        Fetxt.Size = New Size(138, 27)
+        Fetxt.TabIndex = 216
+        ' 
+        ' Label2
+        ' 
+        Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Label2.Location = New Point(720, 230)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(56, 33)
+        Label2.TabIndex = 217
+        Label2.Text = "残額"
+        ' 
+        ' chLal
+        ' 
+        chLal.BorderStyle = BorderStyle.Fixed3D
+        chLal.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        chLal.Location = New Point(782, 229)
+        chLal.Name = "chLal"
+        chLal.Size = New Size(138, 50)
+        chLal.TabIndex = 218
+        ' 
+        ' Label9
+        ' 
+        Label9.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Label9.Location = New Point(684, 140)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(92, 33)
+        Label9.TabIndex = 219
+        Label9.Text = "投入金額"
+        ' 
+        ' smGB
+        ' 
+        smGB.Controls.Add(stRBc)
+        smGB.Controls.Add(stRBk)
+        smGB.Controls.Add(stRBu)
+        smGB.Controls.Add(meRB)
+        smGB.Controls.Add(stRB)
+        smGB.Location = New Point(472, 210)
+        smGB.Name = "smGB"
+        smGB.Size = New Size(212, 150)
+        smGB.TabIndex = 260
+        smGB.TabStop = False
+        smGB.Text = "通学または通勤"
+        ' 
+        ' stRBc
+        ' 
+        stRBc.AutoSize = True
+        stRBc.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBc.Location = New Point(87, 106)
+        stRBc.Name = "stRBc"
+        stRBc.Size = New Size(109, 27)
+        stRBc.TabIndex = 242
+        stRBc.TabStop = True
+        stRBc.Text = "通学(中学)"
+        stRBc.UseVisualStyleBackColor = True
+        ' 
+        ' stRBk
+        ' 
+        stRBk.AutoSize = True
+        stRBk.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBk.Location = New Point(87, 73)
+        stRBk.Name = "stRBk"
+        stRBk.Size = New Size(109, 27)
+        stRBk.TabIndex = 241
+        stRBk.TabStop = True
+        stRBk.Text = "通学(高校)"
+        stRBk.UseVisualStyleBackColor = True
+        ' 
+        ' stRBu
+        ' 
+        stRBu.AutoSize = True
+        stRBu.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBu.Location = New Point(87, 35)
+        stRBu.Name = "stRBu"
+        stRBu.Size = New Size(109, 27)
+        stRBu.TabIndex = 240
+        stRBu.TabStop = True
+        stRBu.Text = "通学(大学)"
+        stRBu.UseVisualStyleBackColor = True
+        ' 
         ' meRB
         ' 
         meRB.AutoSize = True
@@ -308,17 +361,6 @@ Partial Class passcoFe
         meRB.TabStop = True
         meRB.Text = "通勤"
         meRB.UseVisualStyleBackColor = True
-        ' 
-        ' smGB
-        ' 
-        smGB.Controls.Add(meRB)
-        smGB.Controls.Add(stRB)
-        smGB.Location = New Point(472, 200)
-        smGB.Name = "smGB"
-        smGB.Size = New Size(91, 112)
-        smGB.TabIndex = 240
-        smGB.TabStop = False
-        smGB.Text = "通学または通勤"
         ' 
         ' stRB
         ' 
@@ -336,7 +378,7 @@ Partial Class passcoFe
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(993, 450)
         Controls.Add(smGB)
         Controls.Add(mGB)
         Controls.Add(Label6)
@@ -371,7 +413,6 @@ Partial Class passcoFe
         PerformLayout()
     End Sub
     Friend WithEvents Bbtn As Button
-    Friend WithEvents isbtn As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents endDTP As DateTimePicker
@@ -389,14 +430,18 @@ Partial Class passcoFe
     Friend WithEvents Label12 As Label
     Friend WithEvents arComboBox As ComboBox
     Friend WithEvents deComboBox As ComboBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents chLal As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Fetxt As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents FeLel As Label
     Friend WithEvents mGB As GroupBox
-    Friend WithEvents meRB As RadioButton
+    Friend WithEvents isbtn As Button
+    Friend WithEvents FeLel As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Fetxt As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents chLal As Label
+    Friend WithEvents Label9 As Label
     Friend WithEvents smGB As GroupBox
+    Friend WithEvents stRBc As RadioButton
+    Friend WithEvents stRBk As RadioButton
+    Friend WithEvents stRBu As RadioButton
+    Friend WithEvents meRB As RadioButton
     Friend WithEvents stRB As RadioButton
 End Class

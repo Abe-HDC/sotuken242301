@@ -119,6 +119,7 @@ Partial Class tickets
         ' CBend
         ' 
         CBend.FormattingEnabled = True
+        CBend.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         CBend.Location = New Point(557, 97)
         CBend.Name = "CBend"
         CBend.Size = New Size(191, 28)
@@ -127,6 +128,7 @@ Partial Class tickets
         ' CBst
         ' 
         CBst.FormattingEnabled = True
+        CBst.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         CBst.Location = New Point(305, 97)
         CBst.Name = "CBst"
         CBst.Size = New Size(191, 28)

@@ -25,6 +25,9 @@ Partial Class passs
         Nbtn = New Button()
         Btin = New Button()
         smGB = New GroupBox()
+        stRBc = New RadioButton()
+        stRBk = New RadioButton()
+        stRBu = New RadioButton()
         meRB = New RadioButton()
         stRB = New RadioButton()
         mGB = New GroupBox()
@@ -52,7 +55,7 @@ Partial Class passs
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(577, 300)
+        Nbtn.Location = New Point(690, 300)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(171, 104)
         Nbtn.TabIndex = 47
@@ -71,14 +74,53 @@ Partial Class passs
         ' 
         ' smGB
         ' 
+        smGB.Controls.Add(stRBc)
+        smGB.Controls.Add(stRBk)
+        smGB.Controls.Add(stRBu)
         smGB.Controls.Add(meRB)
         smGB.Controls.Add(stRB)
-        smGB.Location = New Point(674, 57)
+        smGB.Location = New Point(674, 47)
         smGB.Name = "smGB"
-        smGB.Size = New Size(91, 112)
+        smGB.Size = New Size(212, 150)
         smGB.TabIndex = 258
         smGB.TabStop = False
         smGB.Text = "通学または通勤"
+        ' 
+        ' stRBc
+        ' 
+        stRBc.AutoSize = True
+        stRBc.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBc.Location = New Point(87, 106)
+        stRBc.Name = "stRBc"
+        stRBc.Size = New Size(109, 27)
+        stRBc.TabIndex = 242
+        stRBc.TabStop = True
+        stRBc.Text = "通学(中学)"
+        stRBc.UseVisualStyleBackColor = True
+        ' 
+        ' stRBk
+        ' 
+        stRBk.AutoSize = True
+        stRBk.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBk.Location = New Point(87, 73)
+        stRBk.Name = "stRBk"
+        stRBk.Size = New Size(109, 27)
+        stRBk.TabIndex = 241
+        stRBk.TabStop = True
+        stRBk.Text = "通学(高校)"
+        stRBk.UseVisualStyleBackColor = True
+        ' 
+        ' stRBu
+        ' 
+        stRBu.AutoSize = True
+        stRBu.Font = New Font("Yu Gothic UI", 10.2F)
+        stRBu.Location = New Point(87, 35)
+        stRBu.Name = "stRBu"
+        stRBu.Size = New Size(109, 27)
+        stRBu.TabIndex = 240
+        stRBu.TabStop = True
+        stRBu.Text = "通学(大学)"
+        stRBu.UseVisualStyleBackColor = True
         ' 
         ' meRB
         ' 
@@ -205,7 +247,6 @@ Partial Class passs
         ' 
         ' nameDTP
         ' 
-        nameDTP.Enabled = False
         nameDTP.Location = New Point(26, 234)
         nameDTP.Name = "nameDTP"
         nameDTP.Size = New Size(195, 27)
@@ -261,6 +302,7 @@ Partial Class passs
         ' arComboBox
         ' 
         arComboBox.FormattingEnabled = True
+        arComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         arComboBox.Location = New Point(512, 236)
         arComboBox.Name = "arComboBox"
         arComboBox.Size = New Size(195, 28)
@@ -269,6 +311,7 @@ Partial Class passs
         ' deComboBox
         ' 
         deComboBox.FormattingEnabled = True
+        deComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         deComboBox.Location = New Point(256, 236)
         deComboBox.Name = "deComboBox"
         deComboBox.Size = New Size(195, 28)
@@ -278,7 +321,7 @@ Partial Class passs
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(909, 432)
         Controls.Add(smGB)
         Controls.Add(mGB)
         Controls.Add(Label6)
@@ -329,4 +372,7 @@ Partial Class passs
     Friend WithEvents Label1 As Label
     Friend WithEvents arComboBox As ComboBox
     Friend WithEvents deComboBox As ComboBox
+    Friend WithEvents stRBc As RadioButton
+    Friend WithEvents stRBk As RadioButton
+    Friend WithEvents stRBu As RadioButton
 End Class

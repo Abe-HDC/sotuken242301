@@ -22,8 +22,10 @@ Partial Class passco
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Bbtn = New Button()
         Label1 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Bbtn
@@ -45,6 +47,10 @@ Partial Class passco
         Label1.TabIndex = 72
         Label1.Text = "ICカードをタッチしてください"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' passco
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -59,4 +65,5 @@ Partial Class passco
 
     Friend WithEvents Bbtn As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer1 As Timer
 End Class

@@ -22,9 +22,11 @@ Partial Class ICsreis
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label1 = New Label()
         Label2 = New Label()
         Bbtn = New Button()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Label1
@@ -74,4 +76,5 @@ Partial Class ICsreis
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Bbtn As Button
+    Friend WithEvents Timer1 As Timer
 End Class

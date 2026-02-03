@@ -54,6 +54,7 @@ Partial Class ticketsFe
         ' rtRB
         ' 
         rtRB.AutoSize = True
+        rtRB.Enabled = False
         rtRB.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
         rtRB.Location = New Point(102, 198)
         rtRB.Name = "rtRB"
@@ -66,6 +67,8 @@ Partial Class ticketsFe
         ' owRB
         ' 
         owRB.AutoSize = True
+        owRB.CausesValidation = False
+        owRB.Enabled = False
         owRB.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
         owRB.Location = New Point(102, 147)
         owRB.Name = "owRB"
@@ -124,7 +127,9 @@ Partial Class ticketsFe
         ' 
         ' CBend
         ' 
+        CBend.Enabled = False
         CBend.FormattingEnabled = True
+        CBend.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         CBend.Location = New Point(557, 93)
         CBend.Name = "CBend"
         CBend.Size = New Size(191, 28)
@@ -132,7 +137,9 @@ Partial Class ticketsFe
         ' 
         ' CBst
         ' 
+        CBst.Enabled = False
         CBst.FormattingEnabled = True
+        CBst.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
         CBst.Location = New Point(305, 93)
         CBst.Name = "CBst"
         CBst.Size = New Size(191, 28)
@@ -152,18 +159,18 @@ Partial Class ticketsFe
         ' 
         FeLel.BorderStyle = BorderStyle.Fixed3D
         FeLel.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        FeLel.Location = New Point(586, 175)
+        FeLel.Location = New Point(586, 168)
         FeLel.Name = "FeLel"
-        FeLel.Size = New Size(162, 31)
+        FeLel.Size = New Size(162, 48)
         FeLel.TabIndex = 25
         ' 
         ' chLal
         ' 
         chLal.BorderStyle = BorderStyle.Fixed3D
         chLal.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        chLal.Location = New Point(586, 288)
+        chLal.Location = New Point(586, 277)
         chLal.Name = "chLal"
-        chLal.Size = New Size(162, 31)
+        chLal.Size = New Size(162, 54)
         chLal.TabIndex = 27
         ' 
         ' Label7
@@ -195,6 +202,7 @@ Partial Class ticketsFe
         ' 
         ' dayDTP
         ' 
+        dayDTP.Enabled = False
         dayDTP.Location = New Point(102, 91)
         dayDTP.Name = "dayDTP"
         dayDTP.Size = New Size(164, 27)

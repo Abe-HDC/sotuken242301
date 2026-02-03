@@ -7,6 +7,7 @@ Public Class pass
         Dim Connection As New MySqlConnection
         Dim Command As MySqlCommand
         'Dim DataReader As MySqlDataReader
+
         Dim sei As String = nametxt.Text
         Dim seinen As String = nameDTP.Value.ToString("yyyy/MM/dd")
         Dim std As String = stDTP.Value.ToString("yyyy/MM/dd")
