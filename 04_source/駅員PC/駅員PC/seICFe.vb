@@ -53,6 +53,8 @@ Public Class seICFe
         'Dispose
         Command.Dispose()
         Connection.Dispose()
+
+        Label2.Text = fare
     End Sub
 
 
@@ -120,7 +122,7 @@ Public Class seICFe
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET depo = "" WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET depo = '' WHERE ICno = {ReceivedId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -159,7 +161,7 @@ Public Class seICFe
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET depo = "",bal=bal-{fare} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET depo = '',bal=bal-{fare} WHERE ICno = {ReceivedId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 

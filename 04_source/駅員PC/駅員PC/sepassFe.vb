@@ -49,6 +49,8 @@ Public Class sepassFe
         'Dispose
         Command.Dispose()
         Connection.Dispose()
+
+        Label2.Text = fare
     End Sub
 
     Private Sub DisplayBalance()
@@ -90,6 +92,8 @@ Public Class sepassFe
         'Dispose
         Command.Dispose()
         Connection.Dispose()
+
+
     End Sub
 
     Private Sub cabtn_Click(sender As Object, e As EventArgs) Handles cabtn.Click
@@ -115,7 +119,7 @@ Public Class sepassFe
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET depo = "" WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET depo = '' WHERE ICno = {ReceivedId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -154,7 +158,7 @@ Public Class sepassFe
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET depo = "",bal=bal-{fare} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET depo = '',bal=bal-{fare} WHERE ICno = {ReceivedId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -167,6 +171,11 @@ Public Class sepassFe
         Connection.Dispose()
 
         seICend.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Bbtn_Click(sender As Object, e As EventArgs) Handles Bbtn.Click
+        sepass.Show()
         Me.Hide()
     End Sub
 End Class

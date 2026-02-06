@@ -48,6 +48,10 @@ Partial Class sepass
         Label1.TabIndex = 4
         Label1.Text = "定期券ICカードをタッチしてください"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' sepass
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
