@@ -25,17 +25,17 @@ Partial Class seticket
         Label4 = New Label()
         Fetxt = New TextBox()
         Label3 = New Label()
-        Label2 = New Label()
+        FeLal = New Label()
         cabtn = New Button()
         Bbtn = New Button()
         Label1 = New Label()
         Label5 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        stTB = New TextBox()
+        endTB = New TextBox()
         Label6 = New Label()
         Label7 = New Label()
         Button1 = New Button()
-        ComboBox1 = New ComboBox()
+        endCB = New ComboBox()
         SuspendLayout()
         ' 
         ' Label4
@@ -65,14 +65,14 @@ Partial Class seticket
         Label3.TabIndex = 26
         Label3.Text = "乗り越し運賃"
         ' 
-        ' Label2
+        ' FeLal
         ' 
-        Label2.BorderStyle = BorderStyle.Fixed3D
-        Label2.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(553, 50)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(209, 71)
-        Label2.TabIndex = 25
+        FeLal.BorderStyle = BorderStyle.Fixed3D
+        FeLal.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        FeLal.Location = New Point(553, 50)
+        FeLal.Name = "FeLal"
+        FeLal.Size = New Size(209, 71)
+        FeLal.TabIndex = 25
         ' 
         ' cabtn
         ' 
@@ -114,19 +114,19 @@ Partial Class seticket
         Label5.TabIndex = 30
         Label5.Text = "到着駅"
         ' 
-        ' TextBox1
+        ' stTB
         ' 
-        TextBox1.Location = New Point(65, 56)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
-        TextBox1.TabIndex = 31
+        stTB.Location = New Point(65, 56)
+        stTB.Name = "stTB"
+        stTB.Size = New Size(125, 27)
+        stTB.TabIndex = 31
         ' 
-        ' TextBox2
+        ' endTB
         ' 
-        TextBox2.Location = New Point(226, 56)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(125, 27)
-        TextBox2.TabIndex = 32
+        endTB.Location = New Point(226, 56)
+        endTB.Name = "endTB"
+        endTB.Size = New Size(125, 27)
+        endTB.TabIndex = 32
         ' 
         ' Label6
         ' 
@@ -158,31 +158,32 @@ Partial Class seticket
         Button1.Text = "計算"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox1
+        ' endCB
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(380, 56)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(151, 28)
-        ComboBox1.TabIndex = 37
+        endCB.FormattingEnabled = True
+        endCB.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
+        endCB.Location = New Point(380, 56)
+        endCB.Name = "endCB"
+        endCB.Size = New Size(151, 28)
+        endCB.TabIndex = 37
         ' 
         ' seticket
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(ComboBox1)
+        Controls.Add(endCB)
         Controls.Add(Button1)
         Controls.Add(Label7)
         Controls.Add(Label6)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(endTB)
+        Controls.Add(stTB)
         Controls.Add(Label5)
         Controls.Add(Label1)
         Controls.Add(Label4)
         Controls.Add(Fetxt)
         Controls.Add(Label3)
-        Controls.Add(Label2)
+        Controls.Add(FeLal)
         Controls.Add(cabtn)
         Controls.Add(Bbtn)
         Name = "seticket"
@@ -194,15 +195,15 @@ Partial Class seticket
     Friend WithEvents Label4 As Label
     Friend WithEvents Fetxt As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents FeLal As Label
     Friend WithEvents cabtn As Button
     Friend WithEvents Bbtn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents stTB As TextBox
+    Friend WithEvents endTB As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents endCB As ComboBox
 End Class

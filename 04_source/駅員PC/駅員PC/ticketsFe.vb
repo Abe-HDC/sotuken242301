@@ -5,6 +5,7 @@ Public Class ticketsFe
     Public Property stsfe As String
     Public Property endsfe As String
     Public Property rbfe As Integer
+
     Dim fare As Integer
 
     Private Sub ticketsFe_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -21,7 +22,7 @@ Public Class ticketsFe
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT s1.stationname,s2.stationname,fareusu.fare FROM com JOIN ruote ON com.busid = ruote.busid JOIN station AS s1 ON ruote.ruoid = s1.ruoid JOIN station AS s2 ON ruote.ruoid = s2.ruoid JOIN fareusu ON com.busid = fareusu.busid JOIN medium ON fareusu.medium = medium.mediumno WHERE s1.stationname = '{stsfe}' AND s2.stationname = '{endsfe}' AND ABS(s2.pointkm - s1.pointkm) >= fareusu.minkm AND ABS(s2.pointkm - s1.pointkm) < fareusu.maxkm AND fareusu.medium = 2"
+        Command.CommandText = $"SELECT s1.stationname,s2.stationname,fareusu.fare FROM com JOIN station AS s1 ON com.busid IN (SELECT busid FROM ruote WHERE ruoid = s1.ruoid) JOIN station AS s2 ON com.busid IN (SELECT busid FROM ruote WHERE ruoid = s2.ruoid) JOIN fareusu ON com.busid = fareusu.busid JOIN medium ON fareusu.medium = medium.mediumno WHERE s1.stationname = '{stsfe}' AND s2.stationname = '{endsfe}' AND fareusu.medium = 2 AND ABS(s2.pointkm - s1.pointkm) >= fareusu.minkm AND ABS(s2.pointkm - s1.pointkm) < fareusu.maxkm;"
         'SQLを実行
         DataReader = Command.ExecuteReader
 

@@ -359,7 +359,7 @@ Partial Class passcoFe
         meRB.Size = New Size(65, 27)
         meRB.TabIndex = 239
         meRB.TabStop = True
-        meRB.Text = "通勤"
+        meRB.Text = "通学"
         meRB.UseVisualStyleBackColor = True
         ' 
         ' stRB
@@ -371,7 +371,7 @@ Partial Class passcoFe
         stRB.Size = New Size(65, 27)
         stRB.TabIndex = 238
         stRB.TabStop = True
-        stRB.Text = "通学"
+        stRB.Text = "通勤"
         stRB.UseVisualStyleBackColor = True
         ' 
         ' passcoFe

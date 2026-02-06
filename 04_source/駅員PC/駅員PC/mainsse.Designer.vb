@@ -25,6 +25,7 @@ Partial Class mainsse
         bticket = New Button()
         bICpass = New Button()
         bIC = New Button()
+        Bbtn = New Button()
         SuspendLayout()
         ' 
         ' bticket
@@ -57,11 +58,22 @@ Partial Class mainsse
         bIC.Text = "ICカード"
         bIC.UseVisualStyleBackColor = True
         ' 
+        ' Bbtn
+        ' 
+        Bbtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
+        Bbtn.Location = New Point(12, 327)
+        Bbtn.Name = "Bbtn"
+        Bbtn.Size = New Size(176, 111)
+        Bbtn.TabIndex = 23
+        Bbtn.Text = "戻る"
+        Bbtn.UseVisualStyleBackColor = True
+        ' 
         ' mainsse
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Bbtn)
         Controls.Add(bticket)
         Controls.Add(bICpass)
         Controls.Add(bIC)
@@ -73,4 +85,5 @@ Partial Class mainsse
     Friend WithEvents bticket As Button
     Friend WithEvents bICpass As Button
     Friend WithEvents bIC As Button
+    Friend WithEvents Bbtn As Button
 End Class

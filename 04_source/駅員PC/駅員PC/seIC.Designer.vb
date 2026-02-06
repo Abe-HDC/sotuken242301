@@ -22,8 +22,10 @@ Partial Class seIC
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Bbtn = New Button()
         Label1 = New Label()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' Bbtn
@@ -46,6 +48,10 @@ Partial Class seIC
         Label1.TabIndex = 2
         Label1.Text = "ICカードをタッチしてください"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        ' 
         ' seIC
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -61,4 +67,5 @@ Partial Class seIC
 
     Friend WithEvents Bbtn As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer1 As Timer
 End Class

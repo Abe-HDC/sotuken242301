@@ -103,4 +103,8 @@ Public Class ICsad
         ICsreis.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Bbtn_Click(sender As Object, e As EventArgs) Handles Bbtn.Click
+
+    End Sub
 End Class
