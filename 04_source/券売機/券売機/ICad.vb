@@ -5,7 +5,7 @@ Public Class ICad
     Private Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
     Const cardType As Integer = 5     'カードタイプ
 
-    Public Property ReceivedId As Integer
+    Public Property ReceivedId As String
     Private Sub ICad_Load(sender As Object, e As EventArgs) Handles Me.Load
         DisplayBalance()
     End Sub
@@ -33,7 +33,7 @@ Public Class ICad
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -83,7 +83,7 @@ Public Class ICad
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE ICno = {ReceivedId} AND reday >= '{stD}' AND reday <= '{endD}' "
+        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE caredid = '{ReceivedId}' AND reday >= '{stD}' AND reday <= '{endD}' "
         'SQLを実行
         DataReader = Command.ExecuteReader
 

@@ -27,6 +27,7 @@
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         If ReadStart(0) = 0 Then
             Timer1.Enabled = False
+
             isICn.Show()
             Me.Hide()
         End If

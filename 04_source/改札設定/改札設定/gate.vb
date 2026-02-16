@@ -4,8 +4,12 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 
 Public Class gate
-    Public Property ReceivedId As Integer
+    Public Property ReceivedId As String
+
+    Public Property ICId As Integer
     Public Property pay As Integer
+
+    Dim niti As String
 
     Private Sub gate_Load(sender As Object, e As EventArgs) Handles Me.Load
         baldis()
@@ -35,14 +39,19 @@ Public Class gate
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT bal,endday FROM iccard WHERE ICno = {ReceivedId} "
+        Command.CommandText = $"SELECT bal,endday FROM iccard WHERE ICno = {ICId} "
         'SQLを実行
         DataReader = Command.ExecuteReader
 
         If DataReader.Read() Then
             Label2.Text = DataReader("bal").ToString()
-            Label5.Text = DataReader("endday").ToString()
+            'niti = DataReader("endday").ToString()
         End If
+
+        'If niti.Length = 0 Then
+        'Else
+        '    Label5.Text = niti
+        'End If
 
 
         'クローズ
@@ -57,7 +66,7 @@ Public Class gate
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Timer1.Stop()
 
-        Dim fnext As New gateend()
+        Dim fnext As New sentaku()
         fnext.show()
         Me.Hide()
     End Sub

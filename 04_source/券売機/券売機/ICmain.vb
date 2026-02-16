@@ -7,7 +7,8 @@ Public Class ICmain
     Private Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
     Const cardType As Integer = 5     'カードタイプ
 
-    Public Property ReceivedId As Integer
+    Public Property ReceivedId As String
+    Public Property ICId As Integer
     Private Sub ICmain_Load(sender As Object, e As EventArgs) Handles Me.Load
         DisplayBalance()
     End Sub
@@ -35,7 +36,7 @@ Public Class ICmain
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ICId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -56,7 +57,7 @@ Public Class ICmain
         If result = 0 Then
 
             Dim nextForm As New ICcharge()
-            nextForm.ReceivedId = ReceivedId ' IDを渡す
+            nextForm.ReceivedId = ICId ' IDを渡す
         End If
     End Sub
 
@@ -84,7 +85,7 @@ Public Class ICmain
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ICId} "
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -105,7 +106,7 @@ Public Class ICmain
         If result = 0 Then
 
             Dim nextForm As New ICcharge()
-            nextForm.ReceivedId = ReceivedId ' IDを渡す
+            nextForm.ReceivedId = ICId ' IDを渡す
             nextForm.Show()
             Me.Hide()
         End If
@@ -135,7 +136,7 @@ Public Class ICmain
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"SELECT bal FROM iccard WHERE ICno = {ICId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -156,7 +157,7 @@ Public Class ICmain
         If result = 0 Then
 
             Dim nextForm As New ICad()
-            nextForm.ReceivedId = ReceivedId ' IDを渡す
+            nextForm.ReceivedId = ICId ' IDを渡す
             nextForm.Show()
             Me.Hide()
         End If

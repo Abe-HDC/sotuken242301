@@ -17,47 +17,63 @@ Public Class passIC
     Dim result As Integer           '読書き結果
     Const cardType As Integer = 5   'カードタイプ
 
-    Private Function ReadStart(ByVal reader As Integer) As Integer
-        '変数の宣言
-        Dim id(10) As Byte
-        Dim length As Integer
-        Dim Ret As Integer = GetCardIDIndex(id(0), length, reader)
-        Return Ret
+    ' バイト配列を16進数文字列に変換する関数（必須）
+    Private Function ByteArrayToHexString(ByVal ba As Byte(), ByVal len As Integer) As String
+        Dim sb As New System.Text.StringBuilder()
+        For i As Integer = 0 To len - 1
+            sb.Append(ba(i).ToString("X2"))
+        Next
+        Return sb.ToString()
     End Function
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
-        If ReadStart(0) = 0 Then
+        ' 変数の準備
+        Dim id(10) As Byte
+        Dim length As Integer
+
+        ' 1. カード読み取り実行
+        If GetCardIDIndex(id(0), length, 0) = 0 Then
             Timer1.Enabled = False
-            Dim Connection As New MySqlConnection
-            Dim Command As MySqlCommand
-            'Dim DataReader As MySqlDataReader
 
+            ' 2. バイト配列を文字列（16進数）に変換
+            idString = ByteArrayToHexString(id, length)
 
-            '接続文字列の設定
-            Connection.ConnectionString = "Database=sotuken242301;Data Source=localhost;User Id=root"
+            Dim Connection As New MySqlConnection("Database=sotuken242301;Data Source=localhost;User Id=root")
+            Try
+                Connection.Open()
 
-            'オープン
-            Connection.Open()
+                ' 3. カードID（caredid）を使って最新の登録情報を取得するSQL
+                ' パラメータ（@cid）を使うことでエラーを防ぎます
+                Dim sql As String = "SELECT ICno FROM iccard WHERE caredid = @cid ORDER BY ICno DESC LIMIT 1"
+                Dim Command As New MySqlCommand(sql, Connection)
+                Command.Parameters.AddWithValue("@cid", idString)
 
-            Command = Connection.CreateCommand
-            Command.CommandText = $" SELECT MAX(ICno) FROM iccard"
-            'SQLを実行
-            'DataReader = Command.ExecuteReader
-            Dim newId As Integer = Convert.ToInt32(Command.ExecuteScalar())
+                ' 実行
+                Dim result = Command.ExecuteScalar()
 
-            'クローズ
-            'DataReader.Close()
-            Connection.Close()
+                If result IsNot Nothing Then
+                    ' 登録があった場合：そのICnoを次のフォームに渡す
+                    Dim foundId As Integer = Convert.ToInt32(result)
 
-            'Dispose
-            Command.Dispose()
-            Connection.Dispose()
-            Dim nextForm As New passICn()
-            nextForm.ReceivedId = newId ' IDを渡す
-            nextForm.Show()
-            Me.Hide()
+                    Dim nextForm As New passICn()
+                    nextForm.ReceivedId = foundId
+                    nextForm.Show()
+                    Me.Hide()
+                Else
+                    ' 登録がなかった場合
+                    MessageBox.Show("このカードは登録されていません。")
+                    Timer1.Enabled = True
+                End If
+
+            Catch ex As Exception
+                MessageBox.Show("DBエラー: " & ex.Message)
+                Timer1.Enabled = True
+            Finally
+                Connection.Close()
+            End Try
         End If
     End Sub
+
     Private Sub Bbtn_Click(sender As Object, e As EventArgs) Handles Bbtn.Click
         passn.Show()
         Me.Hide()

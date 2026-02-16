@@ -5,7 +5,8 @@ Public Class ICcharge
     Private Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
     Const cardType As Integer = 5     'カードタイプ
 
-    Public Property ReceivedId As Integer
+    Public Property ReceivedId As String
+
 
 
     Private Sub ICcharge_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -84,7 +85,7 @@ Public Class ICcharge
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -140,7 +141,7 @@ Public Class ICcharge
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -196,7 +197,7 @@ Public Class ICcharge
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -252,7 +253,7 @@ Public Class ICcharge
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 
@@ -308,7 +309,7 @@ Public Class ICcharge
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET bal = bal + {ch} WHERE ICno = '{ReceivedId}'"
         'SQLを実行
         DataReader = Command.ExecuteReader
 

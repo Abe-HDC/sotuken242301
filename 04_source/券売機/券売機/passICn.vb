@@ -6,7 +6,21 @@ Public Class passICn
     Private Declare Function OTWriteData Lib "OrangeOneStopEasyAPI.dll" (ByRef data As Byte, ByVal dataLength As Integer, ByRef id As Byte, ByRef idLength As Integer, ByRef cardType As Integer) As Integer
     Const cardType As Integer = 5     'カードタイプ
 
-    Public Property ReceivedId As Integer
+    Public Property ReceivedId As String
+
+    Dim std As String
+    Dim endd As String
+    Dim mont As Integer = 0
+    Dim de As String
+    Dim ar As String
+    Dim ge As Integer = 1
+    Dim stdate As Date
+
+    Dim stde As Integer
+    Dim ststa As Integer
+
+    Dim endde As Integer
+    Dim endsta As Integer
 
     Private Sub passICn_Load(sender As Object, e As EventArgs) Handles Me.Load
         '変数の宣言
@@ -71,29 +85,27 @@ Public Class passICn
         Dim dataString As String = ""    '結果文字列
         Dim result As Integer
 
-        'Dim sei As String = nametxt.Text
-        'Dim seinen As String = nameDTP.Value.ToString("yyyy/MM/dd")
-        Dim std As String = stDTP.Value.ToString("yyyy/MM/dd")
-        Dim endd As String = endDTP.Value.ToString("yyyy/MM/dd")
-        Dim mont As Integer
-        Dim de As String = deComboBox.Text
-        Dim ar As String = arComboBox.Text
-        Dim ge As Integer = 1
-        Dim stdate As Date = DateTime.Today
-
+        std = stDTP.Value.ToString("yyyy/MM/dd")
+        endd = endDTP.Value.ToString("yyyy/MM/dd")
+        de = deComboBox.Text
+        ar = arComboBox.Text
+        stdate = DateTime.Today
 
 
         If Rad1m.Checked Then
-            mont = Rad1m.Tag
+            mont = 1
         End If
 
         If Rad3m.Checked Then
-            mont = Rad3m.Tag
+            mont = 3
         End If
 
         If Rad6m.Checked Then
-            mont = Rad6m.Tag
+            mont = 6
         End If
+
+        Calculationst()
+        Calculationend()
 
 
         Dim Connection As New MySqlConnection
@@ -107,7 +119,7 @@ Public Class passICn
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"UPDATE iccard SET stday = '{std}',endday = '{endd}',depass = '{de}',arpass = '{ar}',gepass = {ge},month = {mont} WHERE ICno = {ReceivedId}"
+        Command.CommandText = $"UPDATE iccard SET stday = '{std}',endday = '{endd}',ruoteiddp = {stde},stationiddp = {ststa},depass = '{de}',ruoteidend = {endde},stationidend = {endsta},arpass = '{ar}',gepass = {ge},month = {mont} WHERE ICno = {ReceivedId}"
         'SQLを実行
         DataReader = Command.ExecuteReader
         'Dim newId As Integer = Convert.ToInt32(Command.ExecuteScalar())
@@ -139,6 +151,68 @@ Public Class passICn
             nextForm.Show()
             Me.Hide()
         End If
+    End Sub
+
+    Private Sub Calculationst()
+        Dim Connection As New MySqlConnection
+        Dim Command As MySqlCommand
+        Dim DataReader As MySqlDataReader
+
+
+        '接続文字列の設定
+        Connection.ConnectionString = "Database=sotuken242301;Data Source=localhost;User Id=root"
+
+        'オープン
+        Connection.Open()
+
+        Command = Connection.CreateCommand
+        Command.CommandText = $"SELECT ruoid,stationid FROM station WHERE stationname = '{de}'"
+        'SQLを実行
+        DataReader = Command.ExecuteReader
+
+        If DataReader.Read() Then
+            stde = DataReader("ruoid").ToString()
+            ststa = DataReader("stationid").ToString()
+        End If
+
+        'クローズ
+        DataReader.Close()
+        Connection.Close()
+
+        'Dispose
+        Command.Dispose()
+        Connection.Dispose()
+    End Sub
+
+    Private Sub Calculationend()
+        Dim Connection As New MySqlConnection
+        Dim Command As MySqlCommand
+        Dim DataReader As MySqlDataReader
+
+
+        '接続文字列の設定
+        Connection.ConnectionString = "Database=sotuken242301;Data Source=localhost;User Id=root"
+
+        'オープン
+        Connection.Open()
+
+        Command = Connection.CreateCommand
+        Command.CommandText = $"SELECT ruoid,stationid FROM station WHERE stationname = '{ar}' "
+        'SQLを実行
+        DataReader = Command.ExecuteReader
+
+        If DataReader.Read() Then
+            endde = DataReader("ruoid").ToString()
+            endsta = DataReader("stationid").ToString()
+        End If
+
+        'クローズ
+        DataReader.Close()
+        Connection.Close()
+
+        'Dispose
+        Command.Dispose()
+        Connection.Dispose()
     End Sub
     Private Sub Bbtn_Click(sender As Object, e As EventArgs) Handles Bbtn.Click
         passIC.Show()

@@ -1,7 +1,7 @@
 ﻿Public Class passn
 
     Private Sub nBtn_Click(sender As Object, e As EventArgs) Handles nBtn.Click
-        pass.Show()
+        passnIC.Show()
         Me.Hide()
     End Sub
 
