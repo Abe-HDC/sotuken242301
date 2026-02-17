@@ -83,7 +83,7 @@ Public Class ICad
         Connection.Open()
 
         Command = Connection.CreateCommand
-        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE caredid = '{ReceivedId}' AND reday >= '{stD}' AND reday <= '{endD}' "
+        Command.CommandText = $"SELECT reday 利用日時,bos 乗車駅,gos 降車駅,fare 運賃 FROM resume WHERE ICno = '{ReceivedId}' AND reday >= '{stD}' AND reday <= '{endD}' "
         'SQLを実行
         DataReader = Command.ExecuteReader
 

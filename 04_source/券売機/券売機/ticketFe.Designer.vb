@@ -91,9 +91,9 @@ Partial Class ticketFe
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
         Label2.Location = New Point(259, 251)
         Label2.Name = "Label2"
-        Label2.Size = New Size(55, 33)
+        Label2.Size = New Size(72, 33)
         Label2.TabIndex = 6
-        Label2.Text = "残額"
+        Label2.Text = "お釣り"
         ' 
         ' Label3
         ' 
