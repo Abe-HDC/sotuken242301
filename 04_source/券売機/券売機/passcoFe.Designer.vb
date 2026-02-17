@@ -251,11 +251,11 @@ Partial Class passcoFe
         ' Label2
         ' 
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(579, 239)
+        Label2.Location = New Point(566, 239)
         Label2.Name = "Label2"
-        Label2.Size = New Size(56, 33)
+        Label2.Size = New Size(69, 33)
         Label2.TabIndex = 194
-        Label2.Text = "残額"
+        Label2.Text = "お釣り"
         ' 
         ' Fetxt
         ' 
