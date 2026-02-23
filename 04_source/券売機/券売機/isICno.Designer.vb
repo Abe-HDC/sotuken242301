@@ -31,7 +31,7 @@ Partial Class isICno
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(100, 48)
+        Label1.Location = New Point(144, 49)
         Label1.Name = "Label1"
         Label1.Size = New Size(170, 50)
         Label1.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class isICno
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(588, 316)
+        Nbtn.Location = New Point(632, 317)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(151, 95)
         Nbtn.TabIndex = 95
@@ -50,7 +50,7 @@ Partial Class isICno
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(50, 316)
+        Bbtn.Location = New Point(94, 317)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 96
@@ -61,7 +61,7 @@ Partial Class isICno
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(Nbtn)
         Controls.Add(Label1)

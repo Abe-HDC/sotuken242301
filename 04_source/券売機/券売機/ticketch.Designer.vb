@@ -35,7 +35,7 @@ Partial Class ticketch
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label1.Location = New Point(240, 127)
+        Label1.Location = New Point(276, 125)
         Label1.Name = "Label1"
         Label1.Size = New Size(314, 46)
         Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class ticketch
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label2.Location = New Point(188, 173)
+        Label2.Location = New Point(224, 171)
         Label2.Name = "Label2"
         Label2.Size = New Size(420, 46)
         Label2.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class ticketch
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(622, 316)
+        isbtn.Location = New Point(658, 314)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(151, 95)
         isbtn.TabIndex = 16
@@ -65,7 +65,7 @@ Partial Class ticketch
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label3.Location = New Point(52, 219)
+        Label3.Location = New Point(88, 217)
         Label3.Name = "Label3"
         Label3.Size = New Size(698, 46)
         Label3.TabIndex = 17
@@ -74,7 +74,7 @@ Partial Class ticketch
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(457, 315)
+        Bbtn.Location = New Point(493, 313)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 72
@@ -88,7 +88,7 @@ Partial Class ticketch
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(Label3)
         Controls.Add(isbtn)

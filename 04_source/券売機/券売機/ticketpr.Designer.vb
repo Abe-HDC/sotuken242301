@@ -40,7 +40,7 @@ Partial Class ticketpr
         ' bprT540
         ' 
         bprT540.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bprT540.Location = New Point(204, 230)
+        bprT540.Location = New Point(230, 227)
         bprT540.Name = "bprT540"
         bprT540.Size = New Size(141, 91)
         bprT540.TabIndex = 44
@@ -50,7 +50,7 @@ Partial Class ticketpr
         ' bprT460
         ' 
         bprT460.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bprT460.Location = New Point(645, 133)
+        bprT460.Location = New Point(671, 130)
         bprT460.Name = "bprT460"
         bprT460.Size = New Size(141, 91)
         bprT460.TabIndex = 42
@@ -60,7 +60,7 @@ Partial Class ticketpr
         ' bprY430
         ' 
         bprY430.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bprY430.Location = New Point(498, 133)
+        bprY430.Location = New Point(524, 130)
         bprY430.Name = "bprY430"
         bprY430.Size = New Size(141, 91)
         bprY430.TabIndex = 40
@@ -70,7 +70,7 @@ Partial Class ticketpr
         ' bpr380
         ' 
         bpr380.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpr380.Location = New Point(351, 133)
+        bpr380.Location = New Point(377, 130)
         bpr380.Name = "bpr380"
         bpr380.Size = New Size(141, 91)
         bpr380.TabIndex = 39
@@ -80,7 +80,7 @@ Partial Class ticketpr
         ' bpr330
         ' 
         bpr330.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpr330.Location = New Point(204, 133)
+        bpr330.Location = New Point(230, 130)
         bpr330.Name = "bpr330"
         bpr330.Size = New Size(141, 91)
         bpr330.TabIndex = 38
@@ -90,7 +90,7 @@ Partial Class ticketpr
         ' bprS270
         ' 
         bprS270.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bprS270.Location = New Point(645, 36)
+        bprS270.Location = New Point(671, 33)
         bprS270.Name = "bprS270"
         bprS270.Size = New Size(141, 91)
         bprS270.TabIndex = 36
@@ -100,7 +100,7 @@ Partial Class ticketpr
         ' bpr210
         ' 
         bpr210.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpr210.Location = New Point(498, 36)
+        bpr210.Location = New Point(524, 33)
         bpr210.Name = "bpr210"
         bpr210.Size = New Size(141, 91)
         bpr210.TabIndex = 35
@@ -110,7 +110,7 @@ Partial Class ticketpr
         ' bpr180
         ' 
         bpr180.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpr180.Location = New Point(351, 36)
+        bpr180.Location = New Point(377, 33)
         bpr180.Name = "bpr180"
         bpr180.Size = New Size(141, 91)
         bpr180.TabIndex = 34
@@ -120,7 +120,7 @@ Partial Class ticketpr
         ' bpr160
         ' 
         bpr160.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpr160.Location = New Point(204, 36)
+        bpr160.Location = New Point(230, 33)
         bpr160.Name = "bpr160"
         bpr160.Size = New Size(141, 91)
         bpr160.TabIndex = 33
@@ -130,7 +130,7 @@ Partial Class ticketpr
         ' bExticket
         ' 
         bExticket.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bExticket.Location = New Point(15, 293)
+        bExticket.Location = New Point(41, 290)
         bExticket.Name = "bExticket"
         bExticket.Size = New Size(183, 122)
         bExticket.TabIndex = 51
@@ -140,7 +140,7 @@ Partial Class ticketpr
         ' bprticket
         ' 
         bprticket.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bprticket.Location = New Point(15, 165)
+        bprticket.Location = New Point(41, 162)
         bprticket.Name = "bprticket"
         bprticket.Size = New Size(183, 122)
         bprticket.TabIndex = 50
@@ -150,7 +150,7 @@ Partial Class ticketpr
         ' bCoticket
         ' 
         bCoticket.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bCoticket.Location = New Point(15, 37)
+        bCoticket.Location = New Point(41, 34)
         bCoticket.Name = "bCoticket"
         bCoticket.Size = New Size(183, 122)
         bCoticket.TabIndex = 49
@@ -160,7 +160,7 @@ Partial Class ticketpr
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(204, 327)
+        Bbtn.Location = New Point(230, 324)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 73
@@ -171,7 +171,7 @@ Partial Class ticketpr
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(bExticket)
         Controls.Add(bprticket)

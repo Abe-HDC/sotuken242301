@@ -35,7 +35,7 @@ Partial Class ICpay
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(103, 104)
+        Label1.Location = New Point(136, 102)
         Label1.Name = "Label1"
         Label1.Size = New Size(110, 33)
         Label1.TabIndex = 73
@@ -45,7 +45,7 @@ Partial Class ICpay
         ' 
         Label2.BorderStyle = BorderStyle.Fixed3D
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(612, 101)
+        Label2.Location = New Point(645, 99)
         Label2.Name = "Label2"
         Label2.Size = New Size(134, 37)
         Label2.TabIndex = 81
@@ -55,7 +55,7 @@ Partial Class ICpay
         ' 
         baLal.BorderStyle = BorderStyle.Fixed3D
         baLal.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        baLal.Location = New Point(483, 138)
+        baLal.Location = New Point(516, 136)
         baLal.Name = "baLal"
         baLal.Size = New Size(263, 81)
         baLal.TabIndex = 80
@@ -63,7 +63,7 @@ Partial Class ICpay
         ' Febtn
         ' 
         Febtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Febtn.Location = New Point(573, 305)
+        Febtn.Location = New Point(606, 303)
         Febtn.Name = "Febtn"
         Febtn.Size = New Size(188, 95)
         Febtn.TabIndex = 77
@@ -74,14 +74,14 @@ Partial Class ICpay
         ' 
         FeLel.BorderStyle = BorderStyle.Fixed3D
         FeLel.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        FeLel.Location = New Point(257, 103)
+        FeLel.Location = New Point(290, 101)
         FeLel.Name = "FeLel"
         FeLel.Size = New Size(138, 50)
         FeLel.TabIndex = 72
         ' 
         ' FeTxt
         ' 
-        FeTxt.Location = New Point(257, 192)
+        FeTxt.Location = New Point(290, 190)
         FeTxt.Name = "FeTxt"
         FeTxt.Size = New Size(138, 27)
         FeTxt.TabIndex = 74
@@ -89,7 +89,7 @@ Partial Class ICpay
         ' Label3
         ' 
         Label3.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(116, 186)
+        Label3.Location = New Point(149, 184)
         Label3.Name = "Label3"
         Label3.Size = New Size(97, 33)
         Label3.TabIndex = 79
@@ -98,7 +98,7 @@ Partial Class ICpay
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(40, 305)
+        Bbtn.Location = New Point(73, 303)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 78
@@ -109,7 +109,7 @@ Partial Class ICpay
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label2)
         Controls.Add(baLal)
         Controls.Add(Label3)

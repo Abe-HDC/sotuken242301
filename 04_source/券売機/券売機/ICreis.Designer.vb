@@ -32,7 +32,7 @@ Partial Class ICreis
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(186, 151)
+        Label1.Location = New Point(207, 151)
         Label1.Name = "Label1"
         Label1.Size = New Size(460, 54)
         Label1.TabIndex = 85
@@ -41,7 +41,7 @@ Partial Class ICreis
         ' Label2
         ' 
         Label2.Font = New Font("Yu Gothic UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(197, 196)
+        Label2.Location = New Point(218, 196)
         Label2.Name = "Label2"
         Label2.Size = New Size(426, 54)
         Label2.TabIndex = 86
@@ -50,18 +50,21 @@ Partial Class ICreis
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(605, 316)
+        Bbtn.Location = New Point(626, 316)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 87
         Bbtn.Text = "メインメニューに戻る"
         Bbtn.UseVisualStyleBackColor = True
         ' 
+        ' Timer1
+        ' 
+        ' 
         ' ICreis
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(Label2)
         Controls.Add(Label1)

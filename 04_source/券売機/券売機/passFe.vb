@@ -221,6 +221,17 @@ Public Class passFe
         stdape = deComboBox.Text
         endar = arComboBox.Text
 
+        ' 画面の作業領域（タスクバーを除く）
+        Dim wa = Screen.PrimaryScreen.WorkingArea
+
+        ' 幅と高さを 1/4 に
+        Me.Width = wa.Width \ 2
+        Me.Height = wa.Height \ 2
+
+        ' 左上に配置
+        Me.Left = wa.Left
+        Me.Top = wa.Top
+
         ' 駅名からIDを取得 (DBアクセス)
         Calculationst()
         Calculationend()

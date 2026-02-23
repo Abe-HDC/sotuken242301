@@ -39,7 +39,7 @@ Partial Class ICad
         adDGV.Location = New Point(0, 0)
         adDGV.Name = "adDGV"
         adDGV.RowHeadersWidth = 51
-        adDGV.Size = New Size(798, 331)
+        adDGV.Size = New Size(883, 331)
         adDGV.TabIndex = 0
         ' 
         ' Bbtn
@@ -55,7 +55,7 @@ Partial Class ICad
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(576, 343)
+        isbtn.Location = New Point(651, 343)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(188, 95)
         isbtn.TabIndex = 72
@@ -66,7 +66,7 @@ Partial Class ICad
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(377, 370)
+        Label3.Location = New Point(402, 363)
         Label3.Name = "Label3"
         Label3.Size = New Size(49, 31)
         Label3.TabIndex = 77
@@ -76,7 +76,7 @@ Partial Class ICad
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(235, 340)
+        Label1.Location = New Point(260, 333)
         Label1.Name = "Label1"
         Label1.Size = New Size(223, 31)
         Label1.TabIndex = 76
@@ -84,14 +84,14 @@ Partial Class ICad
         ' 
         ' endDTP
         ' 
-        endDTP.Location = New Point(432, 374)
+        endDTP.Location = New Point(457, 367)
         endDTP.Name = "endDTP"
         endDTP.Size = New Size(138, 27)
         endDTP.TabIndex = 75
         ' 
         ' stDTP
         ' 
-        stDTP.Location = New Point(235, 374)
+        stDTP.Location = New Point(260, 367)
         stDTP.Name = "stDTP"
         stDTP.Size = New Size(138, 27)
         stDTP.TabIndex = 74
@@ -99,7 +99,7 @@ Partial Class ICad
         ' hyozi
         ' 
         hyozi.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        hyozi.Location = New Point(450, 407)
+        hyozi.Location = New Point(475, 400)
         hyozi.Name = "hyozi"
         hyozi.Size = New Size(120, 41)
         hyozi.TabIndex = 78
@@ -110,7 +110,7 @@ Partial Class ICad
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(hyozi)
         Controls.Add(Label3)
         Controls.Add(Label1)

@@ -31,7 +31,7 @@ Partial Class mainf
         ' bticket
         ' 
         bticket.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bticket.Location = New Point(137, 89)
+        bticket.Location = New Point(175, 80)
         bticket.Name = "bticket"
         bticket.Size = New Size(206, 121)
         bticket.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class mainf
         ' bpass
         ' 
         bpass.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bpass.Location = New Point(455, 89)
+        bpass.Location = New Point(493, 80)
         bpass.Name = "bpass"
         bpass.Size = New Size(206, 121)
         bpass.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class mainf
         ' bictouch
         ' 
         bictouch.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bictouch.Location = New Point(137, 258)
+        bictouch.Location = New Point(175, 249)
         bictouch.Name = "bictouch"
         bictouch.Size = New Size(206, 121)
         bictouch.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class mainf
         ' bicissue
         ' 
         bicissue.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        bicissue.Location = New Point(455, 258)
+        bicissue.Location = New Point(493, 249)
         bicissue.Name = "bicissue"
         bicissue.Size = New Size(206, 121)
         bicissue.TabIndex = 3
@@ -72,7 +72,7 @@ Partial Class mainf
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(bicissue)
         Controls.Add(bictouch)
         Controls.Add(bpass)

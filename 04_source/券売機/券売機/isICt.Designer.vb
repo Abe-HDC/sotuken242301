@@ -31,7 +31,7 @@ Partial Class isICt
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(72, 281)
+        Bbtn.Location = New Point(111, 285)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 73
@@ -41,7 +41,7 @@ Partial Class isICt
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(179, 98)
+        Label1.Location = New Point(218, 102)
         Label1.Name = "Label1"
         Label1.Size = New Size(474, 71)
         Label1.TabIndex = 72
@@ -55,7 +55,7 @@ Partial Class isICt
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(Label1)
         Name = "isICt"

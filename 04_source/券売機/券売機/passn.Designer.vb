@@ -31,7 +31,7 @@ Partial Class passn
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(41, 314)
+        Bbtn.Location = New Point(82, 313)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 73
@@ -41,7 +41,7 @@ Partial Class passn
         ' nBtn
         ' 
         nBtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        nBtn.Location = New Point(41, 100)
+        nBtn.Location = New Point(82, 99)
         nBtn.Name = "nBtn"
         nBtn.Size = New Size(222, 130)
         nBtn.TabIndex = 74
@@ -51,7 +51,7 @@ Partial Class passn
         ' coBtn
         ' 
         coBtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        coBtn.Location = New Point(544, 100)
+        coBtn.Location = New Point(585, 99)
         coBtn.Name = "coBtn"
         coBtn.Size = New Size(222, 130)
         coBtn.TabIndex = 75
@@ -61,7 +61,7 @@ Partial Class passn
         ' Button1
         ' 
         Button1.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Button1.Location = New Point(290, 100)
+        Button1.Location = New Point(331, 99)
         Button1.Name = "Button1"
         Button1.Size = New Size(222, 130)
         Button1.TabIndex = 76
@@ -72,7 +72,7 @@ Partial Class passn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Button1)
         Controls.Add(coBtn)
         Controls.Add(nBtn)

@@ -31,7 +31,7 @@ Partial Class passnIC
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(37, 302)
+        Bbtn.Location = New Point(88, 300)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 77
@@ -41,7 +41,7 @@ Partial Class passnIC
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(159, 100)
+        Label1.Location = New Point(210, 98)
         Label1.Name = "Label1"
         Label1.Size = New Size(474, 71)
         Label1.TabIndex = 76
@@ -55,7 +55,7 @@ Partial Class passnIC
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(Label1)
         Name = "passnIC"

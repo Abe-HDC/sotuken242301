@@ -34,7 +34,7 @@ Partial Class passcoend
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(431, 277)
+        Bbtn.Location = New Point(462, 278)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 123
@@ -44,7 +44,7 @@ Partial Class passcoend
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(588, 278)
+        isbtn.Location = New Point(619, 279)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(151, 95)
         isbtn.TabIndex = 122
@@ -55,7 +55,7 @@ Partial Class passcoend
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label3.Location = New Point(51, 170)
+        Label3.Location = New Point(82, 171)
         Label3.Name = "Label3"
         Label3.Size = New Size(698, 46)
         Label3.TabIndex = 121
@@ -65,7 +65,7 @@ Partial Class passcoend
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label2.Location = New Point(183, 124)
+        Label2.Location = New Point(214, 125)
         Label2.Name = "Label2"
         Label2.Size = New Size(420, 46)
         Label2.TabIndex = 120
@@ -75,7 +75,7 @@ Partial Class passcoend
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label1.Location = New Point(217, 78)
+        Label1.Location = New Point(248, 79)
         Label1.Name = "Label1"
         Label1.Size = New Size(348, 46)
         Label1.TabIndex = 119
@@ -85,7 +85,7 @@ Partial Class passcoend
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(isbtn)
         Controls.Add(Label3)
