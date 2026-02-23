@@ -37,7 +37,7 @@ Partial Class ICcharge
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(79, 346)
+        Bbtn.Location = New Point(128, 349)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 75
@@ -47,7 +47,7 @@ Partial Class ICcharge
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(652, 323)
+        Label1.Location = New Point(701, 326)
         Label1.Name = "Label1"
         Label1.Size = New Size(55, 37)
         Label1.TabIndex = 74
@@ -57,7 +57,7 @@ Partial Class ICcharge
         ' 
         baLal.BorderStyle = BorderStyle.Fixed3D
         baLal.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        baLal.Location = New Point(444, 360)
+        baLal.Location = New Point(493, 363)
         baLal.Name = "baLal"
         baLal.Size = New Size(263, 81)
         baLal.TabIndex = 73
@@ -65,7 +65,7 @@ Partial Class ICcharge
         ' ch1000
         ' 
         ch1000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch1000.Location = New Point(79, 100)
+        ch1000.Location = New Point(128, 103)
         ch1000.Name = "ch1000"
         ch1000.Size = New Size(204, 88)
         ch1000.TabIndex = 76
@@ -75,7 +75,7 @@ Partial Class ICcharge
         ' ch2000
         ' 
         ch2000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch2000.Location = New Point(293, 100)
+        ch2000.Location = New Point(342, 103)
         ch2000.Name = "ch2000"
         ch2000.Size = New Size(204, 88)
         ch2000.TabIndex = 77
@@ -85,7 +85,7 @@ Partial Class ICcharge
         ' ch3000
         ' 
         ch3000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch3000.Location = New Point(503, 100)
+        ch3000.Location = New Point(552, 103)
         ch3000.Name = "ch3000"
         ch3000.Size = New Size(204, 88)
         ch3000.TabIndex = 78
@@ -95,7 +95,7 @@ Partial Class ICcharge
         ' ch10000
         ' 
         ch10000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch10000.Location = New Point(503, 219)
+        ch10000.Location = New Point(552, 222)
         ch10000.Name = "ch10000"
         ch10000.Size = New Size(204, 88)
         ch10000.TabIndex = 81
@@ -105,7 +105,7 @@ Partial Class ICcharge
         ' ch5000
         ' 
         ch5000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch5000.Location = New Point(293, 219)
+        ch5000.Location = New Point(342, 222)
         ch5000.Name = "ch5000"
         ch5000.Size = New Size(204, 88)
         ch5000.TabIndex = 80
@@ -115,7 +115,7 @@ Partial Class ICcharge
         ' ch4000
         ' 
         ch4000.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        ch4000.Location = New Point(79, 219)
+        ch4000.Location = New Point(128, 222)
         ch4000.Name = "ch4000"
         ch4000.Size = New Size(204, 88)
         ch4000.TabIndex = 79
@@ -125,7 +125,7 @@ Partial Class ICcharge
         ' Label2
         ' 
         Label2.Font = New Font("Yu Gothic UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(79, 29)
+        Label2.Location = New Point(128, 32)
         Label2.Name = "Label2"
         Label2.Size = New Size(418, 46)
         Label2.TabIndex = 82
@@ -135,7 +135,7 @@ Partial Class ICcharge
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label2)
         Controls.Add(ch10000)
         Controls.Add(ch5000)

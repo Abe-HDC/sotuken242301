@@ -12,6 +12,17 @@ Public Class gate
     Dim niti As String
 
     Private Sub gate_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' 画面の作業領域（タスクバーを除く）
+        Dim wa = Screen.PrimaryScreen.WorkingArea
+
+        ' 幅と高さを 1/4 に
+        Me.Width = wa.Width \ 2
+        Me.Height = wa.Height \ 2
+
+        ' 左上に配置
+        Me.Left = wa.Left
+        Me.Top = wa.Bottom - Me.Height
+
         baldis()
         Label3.Text = pay
         Timer1.Interval = 3000

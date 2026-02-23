@@ -30,6 +30,17 @@ Public Class isICpay
         Dim Command As MySqlCommand
         Dim DataReader As MySqlDataReader
 
+        ' 画面の作業領域（タスクバーを除く）
+        Dim wa = Screen.PrimaryScreen.WorkingArea
+
+        ' 幅と高さを 1/4 に
+        Me.Width = wa.Width \ 2
+        Me.Height = wa.Height \ 2
+
+        ' 左上に配置
+        Me.Left = wa.Left
+        Me.Top = wa.Top
+
         '接続文字列の設定
         Connection.ConnectionString = "Database=sotuken242301;Data Source=localhost;User Id=root"
 

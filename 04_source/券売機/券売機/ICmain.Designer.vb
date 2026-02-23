@@ -33,7 +33,7 @@ Partial Class ICmain
         ' 
         baLal.BorderStyle = BorderStyle.Fixed3D
         baLal.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        baLal.Location = New Point(440, 307)
+        baLal.Location = New Point(492, 307)
         baLal.Name = "baLal"
         baLal.Size = New Size(263, 81)
         baLal.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class ICmain
         ' 
         Label1.BorderStyle = BorderStyle.Fixed3D
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(648, 270)
+        Label1.Location = New Point(700, 270)
         Label1.Name = "Label1"
         Label1.Size = New Size(55, 37)
         Label1.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class ICmain
         ' chbtn
         ' 
         chbtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        chbtn.Location = New Point(458, 104)
+        chbtn.Location = New Point(510, 104)
         chbtn.Name = "chbtn"
         chbtn.Size = New Size(226, 81)
         chbtn.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class ICmain
         ' adbtn
         ' 
         adbtn.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        adbtn.Location = New Point(75, 104)
+        adbtn.Location = New Point(127, 104)
         adbtn.Name = "adbtn"
         adbtn.Size = New Size(226, 81)
         adbtn.TabIndex = 3
@@ -71,7 +71,7 @@ Partial Class ICmain
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(75, 293)
+        Bbtn.Location = New Point(127, 293)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 72
@@ -82,7 +82,7 @@ Partial Class ICmain
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(adbtn)
         Controls.Add(chbtn)

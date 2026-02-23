@@ -46,7 +46,7 @@ Partial Class pass
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(600, 313)
+        Nbtn.Location = New Point(637, 313)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(151, 95)
         Nbtn.TabIndex = 63
@@ -56,7 +56,7 @@ Partial Class pass
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(52, 313)
+        Bbtn.Location = New Point(89, 313)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 69
@@ -67,7 +67,7 @@ Partial Class pass
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label6.Location = New Point(425, 88)
+        Label6.Location = New Point(462, 88)
         Label6.Name = "Label6"
         Label6.Size = New Size(49, 31)
         Label6.TabIndex = 156
@@ -77,7 +77,7 @@ Partial Class pass
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label4.Location = New Point(501, 60)
+        Label4.Location = New Point(538, 60)
         Label4.Name = "Label4"
         Label4.Size = New Size(83, 31)
         Label4.TabIndex = 155
@@ -85,7 +85,7 @@ Partial Class pass
         ' 
         ' endDTP
         ' 
-        endDTP.Location = New Point(480, 92)
+        endDTP.Location = New Point(517, 92)
         endDTP.Name = "endDTP"
         endDTP.Size = New Size(131, 27)
         endDTP.TabIndex = 154
@@ -93,7 +93,7 @@ Partial Class pass
         ' Rad6m
         ' 
         Rad6m.AutoSize = True
-        Rad6m.Location = New Point(643, 135)
+        Rad6m.Location = New Point(680, 135)
         Rad6m.Name = "Rad6m"
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 153
@@ -105,7 +105,7 @@ Partial Class pass
         ' Rad3m
         ' 
         Rad3m.AutoSize = True
-        Rad3m.Location = New Point(643, 92)
+        Rad3m.Location = New Point(680, 92)
         Rad3m.Name = "Rad3m"
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 152
@@ -117,7 +117,7 @@ Partial Class pass
         ' Rad1m
         ' 
         Rad1m.AutoSize = True
-        Rad1m.Location = New Point(643, 53)
+        Rad1m.Location = New Point(680, 53)
         Rad1m.Name = "Rad1m"
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 151
@@ -128,7 +128,7 @@ Partial Class pass
         ' 
         ' nametxt
         ' 
-        nametxt.Location = New Point(60, 94)
+        nametxt.Location = New Point(97, 94)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)
         nametxt.TabIndex = 150
@@ -137,7 +137,7 @@ Partial Class pass
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label8.Location = New Point(105, 198)
+        Label8.Location = New Point(142, 198)
         Label8.Name = "Label8"
         Label8.Size = New Size(106, 31)
         Label8.TabIndex = 149
@@ -147,7 +147,7 @@ Partial Class pass
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label7.Location = New Point(129, 60)
+        Label7.Location = New Point(166, 60)
         Label7.Name = "Label7"
         Label7.Size = New Size(60, 31)
         Label7.TabIndex = 148
@@ -155,7 +155,7 @@ Partial Class pass
         ' 
         ' nameDTP
         ' 
-        nameDTP.Location = New Point(60, 230)
+        nameDTP.Location = New Point(97, 230)
         nameDTP.Name = "nameDTP"
         nameDTP.Size = New Size(195, 27)
         nameDTP.TabIndex = 147
@@ -164,7 +164,7 @@ Partial Class pass
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label5.Location = New Point(290, 60)
+        Label5.Location = New Point(327, 60)
         Label5.Name = "Label5"
         Label5.Size = New Size(129, 31)
         Label5.TabIndex = 146
@@ -172,7 +172,7 @@ Partial Class pass
         ' 
         ' stDTP
         ' 
-        stDTP.Location = New Point(290, 92)
+        stDTP.Location = New Point(327, 92)
         stDTP.Name = "stDTP"
         stDTP.Size = New Size(131, 27)
         stDTP.TabIndex = 145
@@ -181,7 +181,7 @@ Partial Class pass
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(605, 198)
+        Label3.Location = New Point(642, 198)
         Label3.Name = "Label3"
         Label3.Size = New Size(83, 31)
         Label3.TabIndex = 144
@@ -191,7 +191,7 @@ Partial Class pass
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(349, 198)
+        Label2.Location = New Point(386, 198)
         Label2.Name = "Label2"
         Label2.Size = New Size(83, 31)
         Label2.TabIndex = 143
@@ -201,7 +201,7 @@ Partial Class pass
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(491, 232)
+        Label1.Location = New Point(528, 232)
         Label1.Name = "Label1"
         Label1.Size = New Size(49, 31)
         Label1.TabIndex = 142
@@ -211,7 +211,7 @@ Partial Class pass
         ' 
         arComboBox.FormattingEnabled = True
         arComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
-        arComboBox.Location = New Point(546, 232)
+        arComboBox.Location = New Point(583, 232)
         arComboBox.Name = "arComboBox"
         arComboBox.Size = New Size(195, 28)
         arComboBox.TabIndex = 141
@@ -220,7 +220,7 @@ Partial Class pass
         ' 
         deComboBox.FormattingEnabled = True
         deComboBox.Items.AddRange(New Object() {"高崎", "高崎問屋町", "井野", "新前橋", "群馬総社", "八木原", "渋川", "敷島", "津久田", "岩本", "沼田", "後閑", "上牧", "水上", "北高崎", "群馬八幡", "安中", "磯部", "松井田", "西松井田", "横川", "桐生", "岩宿", "伊勢崎", "駒形", "前橋大島", "前橋", "舘林", "多々良", "県", "福居", "野州山辺", "韮川", "太田", "細谷", "木崎", "剛志", "新伊勢崎"})
-        deComboBox.Location = New Point(290, 232)
+        deComboBox.Location = New Point(327, 232)
         deComboBox.Name = "deComboBox"
         deComboBox.Size = New Size(195, 28)
         deComboBox.TabIndex = 140
@@ -229,7 +229,7 @@ Partial Class pass
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label6)
         Controls.Add(Label4)
         Controls.Add(endDTP)

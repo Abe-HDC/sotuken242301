@@ -36,7 +36,7 @@ Partial Class ticketFe
         ' 
         FeLel.BorderStyle = BorderStyle.Fixed3D
         FeLel.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        FeLel.Location = New Point(389, 76)
+        FeLel.Location = New Point(427, 73)
         FeLel.Name = "FeLel"
         FeLel.Size = New Size(138, 50)
         FeLel.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class ticketFe
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(235, 77)
+        Label1.Location = New Point(273, 74)
         Label1.Name = "Label1"
         Label1.Size = New Size(110, 33)
         Label1.TabIndex = 2
@@ -52,7 +52,7 @@ Partial Class ticketFe
         ' 
         ' FeTxt
         ' 
-        FeTxt.Location = New Point(389, 165)
+        FeTxt.Location = New Point(427, 162)
         FeTxt.Name = "FeTxt"
         FeTxt.Size = New Size(138, 27)
         FeTxt.TabIndex = 3
@@ -60,7 +60,7 @@ Partial Class ticketFe
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(575, 330)
+        isbtn.Location = New Point(613, 327)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(188, 95)
         isbtn.TabIndex = 8
@@ -70,7 +70,7 @@ Partial Class ticketFe
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(42, 330)
+        Bbtn.Location = New Point(80, 327)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 71
@@ -81,7 +81,7 @@ Partial Class ticketFe
         ' 
         chLal.BorderStyle = BorderStyle.Fixed3D
         chLal.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        chLal.Location = New Point(389, 250)
+        chLal.Location = New Point(427, 247)
         chLal.Name = "chLal"
         chLal.Size = New Size(138, 50)
         chLal.TabIndex = 7
@@ -89,7 +89,7 @@ Partial Class ticketFe
         ' Label2
         ' 
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(259, 251)
+        Label2.Location = New Point(297, 248)
         Label2.Name = "Label2"
         Label2.Size = New Size(72, 33)
         Label2.TabIndex = 6
@@ -98,7 +98,7 @@ Partial Class ticketFe
         ' Label3
         ' 
         Label3.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(248, 165)
+        Label3.Location = New Point(286, 162)
         Label3.Name = "Label3"
         Label3.Size = New Size(97, 33)
         Label3.TabIndex = 72
@@ -108,7 +108,7 @@ Partial Class ticketFe
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label3)
         Controls.Add(Bbtn)
         Controls.Add(isbtn)

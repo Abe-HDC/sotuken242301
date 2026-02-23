@@ -52,7 +52,7 @@ Partial Class passICFe
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(42, 332)
+        Bbtn.Location = New Point(67, 332)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 166
@@ -62,7 +62,7 @@ Partial Class passICFe
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(588, 332)
+        isbtn.Location = New Point(613, 332)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(188, 95)
         isbtn.TabIndex = 161
@@ -73,7 +73,7 @@ Partial Class passICFe
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label6.Location = New Point(295, 129)
+        Label6.Location = New Point(320, 129)
         Label6.Name = "Label6"
         Label6.Size = New Size(49, 31)
         Label6.TabIndex = 190
@@ -83,7 +83,7 @@ Partial Class passICFe
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(371, 97)
+        Label3.Location = New Point(396, 97)
         Label3.Name = "Label3"
         Label3.Size = New Size(83, 31)
         Label3.TabIndex = 189
@@ -91,7 +91,7 @@ Partial Class passICFe
         ' 
         ' endDTP
         ' 
-        endDTP.Location = New Point(350, 131)
+        endDTP.Location = New Point(375, 131)
         endDTP.Name = "endDTP"
         endDTP.Size = New Size(134, 27)
         endDTP.TabIndex = 188
@@ -99,7 +99,7 @@ Partial Class passICFe
         ' Rad6m
         ' 
         Rad6m.AutoSize = True
-        Rad6m.Location = New Point(491, 223)
+        Rad6m.Location = New Point(516, 223)
         Rad6m.Name = "Rad6m"
         Rad6m.Size = New Size(63, 24)
         Rad6m.TabIndex = 187
@@ -111,7 +111,7 @@ Partial Class passICFe
         ' Rad3m
         ' 
         Rad3m.AutoSize = True
-        Rad3m.Location = New Point(491, 180)
+        Rad3m.Location = New Point(516, 180)
         Rad3m.Name = "Rad3m"
         Rad3m.Size = New Size(63, 24)
         Rad3m.TabIndex = 186
@@ -123,7 +123,7 @@ Partial Class passICFe
         ' Rad1m
         ' 
         Rad1m.AutoSize = True
-        Rad1m.Location = New Point(491, 141)
+        Rad1m.Location = New Point(516, 141)
         Rad1m.Name = "Rad1m"
         Rad1m.Size = New Size(63, 24)
         Rad1m.TabIndex = 185
@@ -134,7 +134,7 @@ Partial Class passICFe
         ' 
         ' nametxt
         ' 
-        nametxt.Location = New Point(25, 130)
+        nametxt.Location = New Point(50, 130)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(134, 27)
         nametxt.TabIndex = 184
@@ -143,7 +143,7 @@ Partial Class passICFe
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label8.Location = New Point(41, 223)
+        Label8.Location = New Point(66, 223)
         Label8.Name = "Label8"
         Label8.Size = New Size(106, 31)
         Label8.TabIndex = 183
@@ -153,7 +153,7 @@ Partial Class passICFe
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label7.Location = New Point(64, 97)
+        Label7.Location = New Point(89, 97)
         Label7.Name = "Label7"
         Label7.Size = New Size(60, 31)
         Label7.TabIndex = 182
@@ -162,7 +162,7 @@ Partial Class passICFe
         ' nameDTP
         ' 
         nameDTP.Enabled = False
-        nameDTP.Location = New Point(25, 258)
+        nameDTP.Location = New Point(50, 258)
         nameDTP.Name = "nameDTP"
         nameDTP.Size = New Size(134, 27)
         nameDTP.TabIndex = 181
@@ -171,7 +171,7 @@ Partial Class passICFe
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label5.Location = New Point(170, 97)
+        Label5.Location = New Point(195, 97)
         Label5.Name = "Label5"
         Label5.Size = New Size(129, 31)
         Label5.TabIndex = 180
@@ -180,7 +180,7 @@ Partial Class passICFe
         ' stDTP
         ' 
         stDTP.Enabled = False
-        stDTP.Location = New Point(165, 131)
+        stDTP.Location = New Point(190, 131)
         stDTP.Name = "stDTP"
         stDTP.Size = New Size(134, 27)
         stDTP.TabIndex = 179
@@ -189,7 +189,7 @@ Partial Class passICFe
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label10.Location = New Point(371, 223)
+        Label10.Location = New Point(396, 223)
         Label10.Name = "Label10"
         Label10.Size = New Size(83, 31)
         Label10.TabIndex = 178
@@ -199,7 +199,7 @@ Partial Class passICFe
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label11.Location = New Point(190, 226)
+        Label11.Location = New Point(215, 226)
         Label11.Name = "Label11"
         Label11.Size = New Size(83, 31)
         Label11.TabIndex = 177
@@ -209,7 +209,7 @@ Partial Class passICFe
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label12.Location = New Point(295, 257)
+        Label12.Location = New Point(320, 257)
         Label12.Name = "Label12"
         Label12.Size = New Size(49, 31)
         Label12.TabIndex = 176
@@ -219,7 +219,7 @@ Partial Class passICFe
         ' 
         arComboBox.Enabled = False
         arComboBox.FormattingEnabled = True
-        arComboBox.Location = New Point(350, 260)
+        arComboBox.Location = New Point(375, 260)
         arComboBox.Name = "arComboBox"
         arComboBox.Size = New Size(134, 28)
         arComboBox.TabIndex = 175
@@ -228,7 +228,7 @@ Partial Class passICFe
         ' 
         deComboBox.Enabled = False
         deComboBox.FormattingEnabled = True
-        deComboBox.Location = New Point(165, 260)
+        deComboBox.Location = New Point(190, 260)
         deComboBox.Name = "deComboBox"
         deComboBox.Size = New Size(134, 28)
         deComboBox.TabIndex = 174
@@ -236,7 +236,7 @@ Partial Class passICFe
         ' Label9
         ' 
         Label9.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label9.Location = New Point(552, 162)
+        Label9.Location = New Point(577, 162)
         Label9.Name = "Label9"
         Label9.Size = New Size(92, 33)
         Label9.TabIndex = 172
@@ -246,7 +246,7 @@ Partial Class passICFe
         ' 
         chLal.BorderStyle = BorderStyle.Fixed3D
         chLal.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        chLal.Location = New Point(650, 251)
+        chLal.Location = New Point(675, 251)
         chLal.Name = "chLal"
         chLal.Size = New Size(138, 50)
         chLal.TabIndex = 171
@@ -254,7 +254,7 @@ Partial Class passICFe
         ' Label2
         ' 
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(574, 252)
+        Label2.Location = New Point(599, 252)
         Label2.Name = "Label2"
         Label2.Size = New Size(70, 33)
         Label2.TabIndex = 170
@@ -262,7 +262,7 @@ Partial Class passICFe
         ' 
         ' Fetxt
         ' 
-        Fetxt.Location = New Point(650, 166)
+        Fetxt.Location = New Point(675, 166)
         Fetxt.Name = "Fetxt"
         Fetxt.Size = New Size(138, 27)
         Fetxt.TabIndex = 169
@@ -270,7 +270,7 @@ Partial Class passICFe
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(534, 77)
+        Label1.Location = New Point(559, 77)
         Label1.Name = "Label1"
         Label1.Size = New Size(110, 33)
         Label1.TabIndex = 168
@@ -280,7 +280,7 @@ Partial Class passICFe
         ' 
         FeLel.BorderStyle = BorderStyle.Fixed3D
         FeLel.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        FeLel.Location = New Point(650, 77)
+        FeLel.Location = New Point(675, 77)
         FeLel.Name = "FeLel"
         FeLel.Size = New Size(138, 50)
         FeLel.TabIndex = 167
@@ -289,7 +289,7 @@ Partial Class passICFe
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label6)
         Controls.Add(Label3)
         Controls.Add(endDTP)

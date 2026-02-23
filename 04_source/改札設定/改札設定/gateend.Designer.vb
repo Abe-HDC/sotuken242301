@@ -31,7 +31,7 @@ Partial Class gateend
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(341, 187)
+        Label1.Location = New Point(378, 189)
         Label1.Name = "Label1"
         Label1.Size = New Size(133, 50)
         Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class gateend
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label1)
         Name = "gateend"
         Text = "改札機"

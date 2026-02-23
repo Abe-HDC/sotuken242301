@@ -33,7 +33,7 @@ Partial Class isICn
         ' 
         ' nametxt
         ' 
-        nametxt.Location = New Point(179, 187)
+        nametxt.Location = New Point(209, 186)
         nametxt.Name = "nametxt"
         nametxt.Size = New Size(195, 27)
         nametxt.TabIndex = 78
@@ -42,7 +42,7 @@ Partial Class isICn
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label8.Location = New Point(472, 153)
+        Label8.Location = New Point(502, 152)
         Label8.Name = "Label8"
         Label8.Size = New Size(106, 31)
         Label8.TabIndex = 77
@@ -52,7 +52,7 @@ Partial Class isICn
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label7.Location = New Point(248, 153)
+        Label7.Location = New Point(278, 152)
         Label7.Name = "Label7"
         Label7.Size = New Size(60, 31)
         Label7.TabIndex = 76
@@ -60,7 +60,7 @@ Partial Class isICn
         ' 
         ' nameDTP
         ' 
-        nameDTP.Location = New Point(427, 185)
+        nameDTP.Location = New Point(457, 184)
         nameDTP.Name = "nameDTP"
         nameDTP.Size = New Size(195, 27)
         nameDTP.TabIndex = 75
@@ -68,7 +68,7 @@ Partial Class isICn
         ' Nbtn
         ' 
         Nbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Nbtn.Location = New Point(574, 318)
+        Nbtn.Location = New Point(604, 317)
         Nbtn.Name = "Nbtn"
         Nbtn.Size = New Size(151, 95)
         Nbtn.TabIndex = 96
@@ -78,7 +78,7 @@ Partial Class isICn
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(97, 318)
+        Bbtn.Location = New Point(127, 317)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 95
@@ -88,7 +88,7 @@ Partial Class isICn
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(146, 87)
+        Label1.Location = New Point(176, 86)
         Label1.Name = "Label1"
         Label1.Size = New Size(215, 20)
         Label1.TabIndex = 97
@@ -98,7 +98,7 @@ Partial Class isICn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label1)
         Controls.Add(Nbtn)
         Controls.Add(Bbtn)

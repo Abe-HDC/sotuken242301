@@ -543,6 +543,17 @@ Public Class passICFe
             Rad6m.Checked = True
         End If
 
+        ' 画面の作業領域（タスクバーを除く）
+        Dim wa = Screen.PrimaryScreen.WorkingArea
+
+        ' 幅と高さを 1/4 に
+        Me.Width = wa.Width \ 2
+        Me.Height = wa.Height \ 2
+
+        ' 左上に配置
+        Me.Left = wa.Left
+        Me.Top = wa.Top
+
         ' 計算実行
         Farepass()
     End Sub

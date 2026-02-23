@@ -35,7 +35,7 @@ Partial Class passch
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label2.Location = New Point(188, 166)
+        Label2.Location = New Point(219, 166)
         Label2.Name = "Label2"
         Label2.Size = New Size(420, 46)
         Label2.TabIndex = 3
@@ -45,7 +45,7 @@ Partial Class passch
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label1.Location = New Point(222, 120)
+        Label1.Location = New Point(253, 120)
         Label1.Name = "Label1"
         Label1.Size = New Size(348, 46)
         Label1.TabIndex = 2
@@ -55,7 +55,7 @@ Partial Class passch
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Yu Gothic UI", 19.8000011F)
-        Label3.Location = New Point(56, 212)
+        Label3.Location = New Point(87, 212)
         Label3.Name = "Label3"
         Label3.Size = New Size(698, 46)
         Label3.TabIndex = 4
@@ -64,7 +64,7 @@ Partial Class passch
         ' isbtn
         ' 
         isbtn.Font = New Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        isbtn.Location = New Point(593, 320)
+        isbtn.Location = New Point(624, 320)
         isbtn.Name = "isbtn"
         isbtn.Size = New Size(151, 95)
         isbtn.TabIndex = 15
@@ -74,18 +74,21 @@ Partial Class passch
         ' Bbtn
         ' 
         Bbtn.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Bbtn.Location = New Point(436, 319)
+        Bbtn.Location = New Point(467, 319)
         Bbtn.Name = "Bbtn"
         Bbtn.Size = New Size(151, 95)
         Bbtn.TabIndex = 73
         Bbtn.Text = "メインメニューに戻る"
         Bbtn.UseVisualStyleBackColor = True
         ' 
+        ' Timer1
+        ' 
+        ' 
         ' passch
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Bbtn)
         Controls.Add(isbtn)
         Controls.Add(Label3)

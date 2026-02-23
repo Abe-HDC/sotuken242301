@@ -1,5 +1,16 @@
 ﻿Public Class passch
     Private Sub passch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' 画面の作業領域（タスクバーを除く）
+        Dim wa = Screen.PrimaryScreen.WorkingArea
+
+        ' 幅と高さを 1/4 に
+        Me.Width = wa.Width \ 2
+        Me.Height = wa.Height \ 2
+
+        ' 左上に配置
+        Me.Left = wa.Left
+        Me.Top = wa.Top
+
         Timer1.Interval = 3000
         Timer1.Start()
     End Sub
