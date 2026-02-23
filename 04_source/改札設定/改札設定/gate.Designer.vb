@@ -35,7 +35,7 @@ Partial Class gate
         ' Label1
         ' 
         Label1.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label1.Location = New Point(105, 148)
+        Label1.Location = New Point(143, 148)
         Label1.Name = "Label1"
         Label1.Size = New Size(68, 37)
         Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class gate
         ' 
         Label2.BorderStyle = BorderStyle.Fixed3D
         Label2.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label2.Location = New Point(38, 185)
+        Label2.Location = New Point(76, 185)
         Label2.Name = "Label2"
         Label2.Size = New Size(207, 75)
         Label2.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class gate
         ' 
         Label3.BorderStyle = BorderStyle.Fixed3D
         Label3.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label3.Location = New Point(283, 185)
+        Label3.Location = New Point(321, 185)
         Label3.Name = "Label3"
         Label3.Size = New Size(207, 75)
         Label3.TabIndex = 3
@@ -62,7 +62,7 @@ Partial Class gate
         ' Label4
         ' 
         Label4.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label4.Location = New Point(318, 148)
+        Label4.Location = New Point(356, 148)
         Label4.Name = "Label4"
         Label4.Size = New Size(140, 37)
         Label4.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class gate
         ' 
         Label5.BorderStyle = BorderStyle.Fixed3D
         Label5.Font = New Font("Yu Gothic UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label5.Location = New Point(542, 185)
+        Label5.Location = New Point(580, 185)
         Label5.Name = "Label5"
         Label5.Size = New Size(207, 75)
         Label5.TabIndex = 5
@@ -80,7 +80,7 @@ Partial Class gate
         ' Label6
         ' 
         Label6.Font = New Font("Yu Gothic UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(128))
-        Label6.Location = New Point(571, 148)
+        Label6.Location = New Point(609, 148)
         Label6.Name = "Label6"
         Label6.Size = New Size(157, 37)
         Label6.TabIndex = 4
@@ -94,7 +94,7 @@ Partial Class gate
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label5)
         Controls.Add(Label6)
         Controls.Add(Label3)

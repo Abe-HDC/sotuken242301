@@ -31,7 +31,7 @@ Partial Class sentaku
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(509, 189)
+        Button1.Location = New Point(548, 189)
         Button1.Name = "Button1"
         Button1.Size = New Size(184, 79)
         Button1.TabIndex = 0
@@ -40,14 +40,14 @@ Partial Class sentaku
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(289, 206)
+        TextBox1.Location = New Point(328, 206)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(125, 27)
         TextBox1.TabIndex = 1
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(97, 206)
+        TextBox2.Location = New Point(136, 206)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(125, 27)
         TextBox2.TabIndex = 2
@@ -55,7 +55,7 @@ Partial Class sentaku
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(129, 183)
+        Label1.Location = New Point(168, 183)
         Label1.Name = "Label1"
         Label1.Size = New Size(54, 20)
         Label1.TabIndex = 3
@@ -64,7 +64,7 @@ Partial Class sentaku
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(325, 183)
+        Label2.Location = New Point(364, 183)
         Label2.Name = "Label2"
         Label2.Size = New Size(39, 20)
         Label2.TabIndex = 4
@@ -74,7 +74,7 @@ Partial Class sentaku
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(882, 453)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox2)
